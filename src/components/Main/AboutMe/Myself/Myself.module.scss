@@ -1,0 +1,95 @@
+.myself {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  &__imgBox {
+    border: 18px solid var(--avatar-border);
+    border-radius: 100%;
+    width: 345px;
+    height: 345px;
+    overflow: hidden;
+    background-image: url(../../../../assets/images/Main/About/avatar.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 55px;
+  }
+
+  &__textBox {
+    max-width: 495px;
+  }
+
+  &__subtitle {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: var(--h-color);
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  &__text {
+    max-width: 470px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 27px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    margin-right: 8px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--btn-bg);
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link_download {
+    border: 2px solid var(--border-color);
+    color: var(--logo-color);
+
+    &:hover {
+      background-color: var(--border-color);
+      color: #fff;
+    }
+  }
+
+  &__link_contact {
+    border: 2px solid #d5d5d5;
+    color: var(--btn-sm);
+
+    &:hover {
+      background-color: #d5d5d5;
+      color: #333;
+    }
+  }
+}

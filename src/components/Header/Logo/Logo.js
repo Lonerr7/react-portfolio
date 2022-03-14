@@ -22,8 +22,8 @@ const Logo = () => {
         <div className={s.logo}>
           <p className={s.logo__symbol}>V</p>
           <p className={s.logo__text}>
-            Vanya
-            <span>Karabankov</span>
+            Vanya 
+            <span> Karabankov</span>
           </p>
         </div>
       </NavLink>
