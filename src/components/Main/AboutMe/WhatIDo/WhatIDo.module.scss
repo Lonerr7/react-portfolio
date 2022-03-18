@@ -1,0 +1,21 @@
+@import '../../../../vars.scss';
+
+.whatIDo {
+  &__title {
+    color: var(--h-color);
+    font-weight: 600; 
+    font-size: 21px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+
+    &::before {
+      @extend %heading-big-line;
+    }
+
+    &::after {
+      @extend %heading-small-line;
+    }
+  }
+}

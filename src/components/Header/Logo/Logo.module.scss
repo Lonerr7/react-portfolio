@@ -50,3 +50,14 @@
 .themeSwitcherDark {
   color: #fff;
 }
+
+.languageSwitcher {
+  margin-left: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  color: var(--logo-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

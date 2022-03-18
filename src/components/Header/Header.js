@@ -1,5 +1,5 @@
 import s from './Header.module.scss';
-import Logo from './Logo/Logo';
+import LogoContainer from './Logo/LogoContainer/LogoContainer';
 import Navbar from './Navbar/Navbar';
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <header className={s.header}>
       <div className={s.header__container}>
         <div className={s.header__inner}>
-          <Logo />
+          <LogoContainer />
           <Navbar />
         </div>
       </div>

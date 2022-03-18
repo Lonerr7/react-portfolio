@@ -1,29 +1,20 @@
-import { NavLink } from 'react-router-dom';
+import ListItem from './ListItem/ListItem';
 import s from './RightNav.module.scss';
 
-const RightNav = ({open}) => {
+const RightNav = ({ open, navArr }) => {
+  const liElements = navArr.map((l, i) => (
+    <ListItem
+      key={i}
+      classLiTitle={s.menu__listItem}
+      classLinkTitle={s.menu__listLink}
+      data={l.title}
+      to={l.to}
+    />
+  ));
+
   return (
     <ul className={open ? s.menu__list : `${s.menu__list} ${s.closed}`}>
-      <li className={s.menu__listItem}>
-        <NavLink className={s.menu__listLink} to="/">
-          About Me
-        </NavLink>
-      </li>
-      <li className={s.menu__listItem}>
-        <NavLink className={s.menu__listLink} to="/resume">
-          Resume
-        </NavLink>
-      </li>
-      <li className={s.menu__listItem}>
-        <NavLink className={s.menu__listLink} to="/portfolio">
-          Portfolio
-        </NavLink>
-      </li>
-      <li className={s.menu__listItem}>
-        <NavLink className={s.menu__listLink} to="/contact">
-          Contact
-        </NavLink>
-      </li>
+      {liElements}
     </ul>
   );
 };

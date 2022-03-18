@@ -1,32 +1,28 @@
+import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import s from './Myself.module.scss';
 
-const Myself = () => {
+const Myself = ({ myself }) => {
   return (
     <section className={s.myself}>
       <div className={s.myself__box}>
         <div className={s.myself__imgBox}></div>
         <div className={s.myself__textBox}>
-          <h4 className={s.myself__subtitle}>Frontend-developer</h4>
-          <h1 className={s.myself__title}>Ivan Karabankov</h1>
-          <p className={s.myself__text}>
-            Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-            convallis, risus non condimentum gravida, odio mauris ullamcorper
-            felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
-            a placerat sapien pretium eu.
-          </p>
+          <h4 className={s.myself__subtitle}>{myself.job}</h4>
+          <h1 className={s.myself__title}>{myself.name}</h1>
+          <p className={s.myself__text}>{myself.aboutMeDescr}</p>
           <div className={s.myself__links}>
             <a
               className={`${s.myself__link} ${s.myself__link_download}`}
               href="link"
             >
-              Download CV
+              {myself.buttons.download}
             </a>
             <NavLink
               to="/contact"
               className={`${s.myself__link} ${s.myself__link_contact}`}
             >
-              Contact
+              {myself.buttons.contact}
             </NavLink>
           </div>
         </div>
@@ -35,4 +31,8 @@ const Myself = () => {
   );
 };
 
-export default Myself;
+const mapStateToProps = (state) => ({
+  myself: state.app.currentLanguageInfo.main.aboutMe.myself,
+});
+
+export default connect(mapStateToProps, null)(Myself);

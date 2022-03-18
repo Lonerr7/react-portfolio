@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Header from './components/Header/Header';
 import AboutMe from './components/Main/AboutMe/AboutMe';
 import Main from './components/Main/Main';
 import Resume from './components/Main/Resume/Resume';
 import Portfolio from './components/Main/Portfolio/Portfolio';
 import Contact from './components/Main/Contact/Contact';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
