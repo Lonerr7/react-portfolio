@@ -6,13 +6,15 @@ import Resume from './components/Main/Resume/Resume';
 import Portfolio from './components/Main/Portfolio/Portfolio';
 import Contact from './components/Main/Contact/Contact';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Container from './components/common/Container/Container';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Main>
-        <div className="container">
+        <Container>
           <div className="main__inner">
             <Routes>
               <Route path="/" element={<AboutMe />} />
@@ -21,8 +23,9 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
-        </div>
+        </Container>
       </Main>
+      <Footer />
     </div>
   );
 };

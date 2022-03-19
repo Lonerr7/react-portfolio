@@ -1,3 +1,4 @@
+import BigContainer from '../common/BigContainer/BigContainer';
 import s from './Header.module.scss';
 import LogoContainer from './Logo/LogoContainer/LogoContainer';
 import Navbar from './Navbar/Navbar';
@@ -5,12 +6,12 @@ import Navbar from './Navbar/Navbar';
 const Header = () => {
   return (
     <header className={s.header}>
-      <div className={s.header__container}>
+      <BigContainer>
         <div className={s.header__inner}>
           <LogoContainer />
           <Navbar />
         </div>
-      </div>
+      </BigContainer>
     </header>
   );
 };

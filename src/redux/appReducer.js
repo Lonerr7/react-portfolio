@@ -4,9 +4,6 @@ import { IoLogoJavascript, IoMdConstruct } from 'react-icons/io';
 import { SiW3C } from 'react-icons/si';
 import { FaGit, FaReact } from 'react-icons/fa';
 
-// TODO: Достилизовать блоки в WhatIDo
-// TODO: Изменить логику текущего языка, а именно создать единый объект, в котором будут поля: текущий язык, русский и английский
-
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
 
@@ -79,13 +76,13 @@ const initialState = {
           {
             id: 5,
             title: 'Layout',
-            img: <SiW3C />,
+            img: <SiW3C style={{marginTop: '-14px'}} />,
             text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
           },
           {
             id: 6,
             title: 'GIT',
-            img: <FaGit />,
+            img: <FaGit style={{marginTop: '-13px'}} />,
             text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
           },
           {
