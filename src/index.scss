@@ -27,11 +27,13 @@ body[data-theme='dark'] {
 }
 
 body[data-language='ru'] {
-  --spacing: 1.2px;
+  --spacing-logo: 1.2px;
+  --spacing-body: 0.7px;
 }
 
 body[data-language='eng'] {
-  --spacing: normal;
+  --spacing-logo: normal;
+  --spacing-body: normal;
 }
 
 body {
@@ -41,7 +43,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   // transition: all 0.3s ease-in-out;
-  letter-spacing: var(--spacing);
+  // letter-spacing: var(--spacing);
+  font-size: 14px;
 }
 
 code {

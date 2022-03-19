@@ -3,7 +3,13 @@ import { connect } from 'react-redux';
 import App from './App';
 import { changeLanguageSuccess, changeThemeSuccess } from './redux/appReducer';
 
-const AppContainer = ({ theme, changeTheme, changeLanguage, language }) => {
+const AppContainer = ({
+  theme,
+  changeTheme,
+  changeLanguage,
+  language,
+  currentLanguageInfo,
+}) => {
   useEffect(() => {
     if (localStorage.getItem('theme')) {
       changeTheme(localStorage.getItem('theme'));
@@ -18,16 +24,22 @@ const AppContainer = ({ theme, changeTheme, changeLanguage, language }) => {
       changeLanguage(localStorage.getItem('language'));
     } else {
       localStorage.setItem('language', language);
+      changeLanguage(language);
     }
     // eslint-disable-next-line
   }, []);
 
-  return <App />;
+  if (!currentLanguageInfo) {
+    return '';
+  } else {
+    return <App />;
+  }
 };
 
 const mapStateToProps = (state) => ({
   theme: state.app.theme,
   language: state.app.language,
+  currentLanguageInfo: state.app.currentLanguageInfo,
 });
 
 const dispatchToProps = {

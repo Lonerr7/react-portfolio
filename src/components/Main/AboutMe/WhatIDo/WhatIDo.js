@@ -10,15 +10,13 @@ const WhatIDo = (props) => {
   return (
     <section className={s.whatIDo}>
       <h2 className={s.whatIDo__title}>What I Do</h2>
-      <div className={s.whatIDo__items}>
-        {elements}
-      </div>
+      <div className={s.whatIDo__items}>{elements}</div>
     </section>
   );
 };
 
 const mapStateToProps = (state) => ({
-  skills: state.app.skills,
+  skills: state.app.currentLanguageInfo.main.aboutMe.skills,
 });
 
 export default connect(mapStateToProps, null)(WhatIDo);

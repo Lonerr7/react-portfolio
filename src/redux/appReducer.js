@@ -1,54 +1,19 @@
-import { BsMoonFill } from 'react-icons/bs';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiSass, DiGulp } from 'react-icons/di';
+import { IoLogoJavascript, IoMdConstruct } from 'react-icons/io';
+import { SiW3C } from 'react-icons/si';
+import { FaGit, FaReact } from 'react-icons/fa';
+
+// TODO: Достилизовать блоки в WhatIDo
+// TODO: Изменить логику текущего языка, а именно создать единый объект, в котором будут поля: текущий язык, русский и английский
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
 
-// TODO: Разобраться с пробелами между буквами на русском языке
-// TODO: Пофиксить изменение места кнопки смены языка
-
 const initialState = {
   theme: 'light',
   language: 'eng',
-  currentLanguageInfo: {
-    header: {
-      logo: {
-        img: 'V',
-        name: 'Vanya Karabankov',
-      },
-      nav: [
-        {
-          title: 'About me',
-          to: '/',
-        },
-        {
-          title: 'Resume',
-          to: '/resume',
-        },
-        {
-          title: 'Portfolio',
-          to: '/portfolio',
-        },
-        {
-          title: 'Contact',
-          to: '/contact',
-        },
-      ],
-    },
-    main: {
-      aboutMe: {
-        myself: {
-          job: 'Frontend-developer',
-          name: 'Ivan Karabankov',
-          aboutMeDescr:
-            'Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.',
-          buttons: {
-            download: 'Download CV',
-            contact: 'Contact',
-          },
-        },
-      },
-    },
-  },
+  currentLanguageInfo: null,
   eng: {
     header: {
       logo: {
@@ -80,12 +45,62 @@ const initialState = {
           job: 'Frontend-developer',
           name: 'Ivan Karabankov',
           aboutMeDescr:
-            'Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.',
+            "Junior web-developer. I develop both static web-pages and dynamic web-applications. Teachable. I take my job seriously and don't like to stand still, so I always learn something new.",
           buttons: {
             download: 'Download CV',
             contact: 'Contact',
           },
         },
+        skills: [
+          {
+            id: 1,
+            title: 'HTML',
+            img: <AiFillHtml5 />,
+            text: 'Learned hypertext markup language HTML. I always use semantic HTML.',
+          },
+          {
+            id: 2,
+            title: 'CSS',
+            img: <DiSass />,
+            text: 'Learned style sheet language CSS. Learned how to use preprocessor SASS (SCSS).',
+          },
+          {
+            id: 3,
+            title: 'JavaScript',
+            img: <IoLogoJavascript />,
+            text: 'Learned JavaScript to create interactive elemetns on the page and to send requests and recieve responses from servers.',
+          },
+          {
+            id: 4,
+            title: 'ReactJS + Redux',
+            img: <FaReact />,
+            text: 'Learned ReactJS to make dymanic single page web-applications. Used Redux for state management, as well as all related libraries: react-redux, redux-thunk. I also have experience with react-router-dom.',
+          },
+          {
+            id: 5,
+            title: 'Layout',
+            img: <SiW3C />,
+            text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
+          },
+          {
+            id: 6,
+            title: 'GIT',
+            img: <FaGit />,
+            text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
+          },
+          {
+            id: 7,
+            title: 'Taskrunners',
+            img: <DiGulp />,
+            text: 'During the development of web-pages learned to use Gulp taskrunner to optimize the process of development.',
+          },
+          {
+            id: 8,
+            title: 'BEM',
+            img: <IoMdConstruct />,
+            text: 'Learned BEM methodology to name classess of HTML-elements.',
+          },
+        ],
       },
     },
   },
@@ -120,23 +135,65 @@ const initialState = {
           job: 'Фронтенд разработчик',
           name: 'Иван Карабаньков',
           aboutMeDescr:
-            'Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.',
+            'Начинающий веб разработчик. Занимаюсь разработкой как статичных веб-сайтов, так и динамичных веб-приложений. Ответственно подхожу к работе. Обучаем. Не люблю стоять на месте и всегда изучаю что-то новое.',
           buttons: {
             download: 'Скачать резюме',
             contact: 'Мои контакты',
           },
         },
+        skills: [
+          {
+            id: 1,
+            title: 'HTML',
+            img: <AiFillHtml5 />,
+            text: 'Изучил язык гипертекстовой разметки HTML. Применяю принципы семантики.',
+          },
+          {
+            id: 2,
+            title: 'CSS',
+            img: <DiSass />,
+            text: 'Изучил язык стилей CSS. Научился использовать препроцессор SASS (SCSS).',
+          },
+          {
+            id: 3,
+            title: 'JavaScript',
+            img: <IoLogoJavascript />,
+            text: 'Изучил язык JavaScript для создания интерактивности на сайте, а также для отправки запросов на сервер.',
+          },
+          {
+            id: 4,
+            title: 'ReactJS + Redux',
+            img: <FaReact />,
+            text: 'Изучил JavaScript библиотеку ReactJs для создания динамических веб-приложений. Для управления состоянием использовал Redux, а также все сопутствующие ему библиотеки: react-redux, redux-thunk. Есть опыт работы с react-router-dom',
+          },
+          {
+            id: 5,
+            title: 'Верстка',
+            img: <SiW3C />,
+            text: 'Научился делать адаптивные макеты под любые разрешения экрана. Подстраиваюсь под принципы W3C-валидатора.',
+          },
+          {
+            id: 6,
+            title: 'GIT',
+            img: <FaGit />,
+            text: 'Изучил систему контроля версий Git. В работе использовал GitHub в качестве удаленного хранилища. Научился пуллить, пушить, создавать ветки, откатываться к предыдущим коммитам и тд.',
+          },
+          {
+            id: 7,
+            title: 'Сборщики',
+            img: <DiGulp />,
+            text: 'При разработке статичных веб-страниц научился применять сборщик Gulp для оптимизации процесса разработки',
+          },
+          {
+            id: 8,
+            title: 'БЭМ',
+            img: <IoMdConstruct />,
+            text: 'Научился использовать методолгию БЭМ для наименования классов элементов.',
+          },
+        ],
       },
     },
   },
-  skills: [
-    {
-      id: 1,
-      title: 'Hii',
-      img: <BsMoonFill />,
-      text: 'adawdasdad',
-    },
-  ],
 };
 
 const appReducer = (state = initialState, action) => {
