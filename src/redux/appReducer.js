@@ -1,8 +1,10 @@
 import { BsMoonFill } from 'react-icons/bs';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+const CHANGE_THEME = 'CHANGE_THEME';
 
 // TODO: Разобраться с пробелами между буквами на русском языке
+// TODO: Пофиксить изменение места кнопки смены языка
 
 const initialState = {
   theme: 'light',
@@ -146,6 +148,11 @@ const appReducer = (state = initialState, action) => {
         language: action.newLanguage,
         currentLanguageInfo: action.newLanguage === 'ru' ? state.ru : state.eng,
       };
+    case CHANGE_THEME:
+      return {
+        ...state,
+        theme: action.newTheme,
+      };
     default:
       return state;
   }
@@ -154,6 +161,11 @@ const appReducer = (state = initialState, action) => {
 export const changeLanguageSuccess = (newLanguage) => ({
   type: CHANGE_LANGUAGE,
   newLanguage,
+});
+
+export const changeThemeSuccess = (newTheme) => ({
+  type: CHANGE_THEME,
+  newTheme,
 });
 
 export default appReducer;

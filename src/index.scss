@@ -26,13 +26,22 @@ body[data-theme='dark'] {
   --shadow: rgba(0, 0, 0, 0.8);
 }
 
+body[data-language='ru'] {
+  --spacing: 1.2px;
+}
+
+body[data-language='eng'] {
+  --spacing: normal;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
+  letter-spacing: var(--spacing);
 }
 
 code {
