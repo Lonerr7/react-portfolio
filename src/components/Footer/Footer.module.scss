@@ -1,0 +1,31 @@
+.footer {
+  padding: 15px 0;
+  border: 2px solid var(--footer-border);
+  flex: 0 0 auto;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--h-color);
+    opacity: 0.6;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__text {
+    color: var(--footer-text-link);
+  }
+
+  &__textLink {
+    margin-left: 3px;
+    color: var(--footer-text-link);
+  }
+}
