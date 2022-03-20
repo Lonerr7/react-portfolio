@@ -1,14 +1,17 @@
 import s from './AboutMe.module.scss';
 import Myself from './Myself/Myself';
 import WhatIDo from './WhatIDo/WhatIDo';
+import Container from '../../common/Container/Container';
 
 const AboutMe = () => {
   return (
     <div className={s.aboutMe}>
-      <Myself />
-      <WhatIDo />
+      <Container>
+        <Myself />
+        <WhatIDo />
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

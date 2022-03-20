@@ -1,7 +1,8 @@
+import { connect } from 'react-redux';
 import BigContainer from '../common/BigContainer/BigContainer';
 import s from './Footer.module.scss';
 
-const Footer = () => {
+const Footer = ({ footer }) => {
   return (
     <footer className={s.footer}>
       <BigContainer>
@@ -17,14 +18,14 @@ const Footer = () => {
             </a>
           </div>
           <p className={s.footer__text}>
-            © 2022. 
+            © 2022.
             <a
               className={s.footer__textLink}
               href="https://lmpixels.com/wp/leven-wp/full-width/"
               target="_blank"
               rel="noreferrer"
             >
-                Design was taken from here
+              {footer.designLinkText}
             </a>
           </p>
         </div>
@@ -33,4 +34,8 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+const mapStateToProps = (state) => ({
+  footer: state.app.currentLanguageInfo.footer,
+});
+
+export default connect(mapStateToProps, null)(Footer);

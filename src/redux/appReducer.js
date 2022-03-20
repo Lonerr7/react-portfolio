@@ -76,13 +76,13 @@ const initialState = {
           {
             id: 5,
             title: 'Layout',
-            img: <SiW3C style={{marginTop: '-14px'}} />,
+            img: <SiW3C style={{ marginTop: '-14px' }} />,
             text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
           },
           {
             id: 6,
             title: 'GIT',
-            img: <FaGit style={{marginTop: '-13px'}} />,
+            img: <FaGit style={{ marginTop: '-13px' }} />,
             text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
           },
           {
@@ -99,6 +99,12 @@ const initialState = {
           },
         ],
       },
+      resume: {
+        title: 'Resume',
+      },
+    },
+    footer: {
+      designLinkText: 'Design was taken from here',
     },
   },
   ru: {
@@ -189,6 +195,12 @@ const initialState = {
           },
         ],
       },
+      resume: {
+        title: 'Резюме',
+      },
+    },
+    footer: {
+      designLinkText: 'Дизайн был взят отсюда',
     },
   },
 };

@@ -1,9 +1,17 @@
+import { connect } from 'react-redux';
+import PageHeader from '../../common/PageHeader/PageHeader';
 import s from './Resume.module.scss';
 
-const Resume = () => {
+const Resume = ({ resume }) => {
   return (
-    <div className={s.resume}>Resume</div>
-  )
-}
+    <div className={s.resume}>
+      <PageHeader title={resume.title} />
+    </div>
+  );
+};
 
-export default Resume
+const mapStateToProps = (state) => ({
+  resume: state.app.currentLanguageInfo.main.resume,
+});
+
+export default connect(mapStateToProps, null)(Resume);

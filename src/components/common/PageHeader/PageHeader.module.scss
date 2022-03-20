@@ -1,0 +1,14 @@
+.pageHeader {
+  border-top: 2px solid var(--footer-border);
+  border-bottom: 2px solid var(--footer-border);
+
+  &__inner {
+    padding: 65px 30px;
+  }
+
+  &__title {
+    color: var(--h-color);
+    font-size: 44px;
+    font-weight: 600;
+  }
+}
