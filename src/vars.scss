@@ -1,6 +1,16 @@
 $container: 1310px;
 $header-container: 1845px;
 
+%heading {
+  color: var(--h-color);
+  font-weight: 600;
+  font-size: 21px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+}
+
 %heading-big-line {
   content: '';
   display: block;

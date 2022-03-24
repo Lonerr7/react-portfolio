@@ -101,6 +101,41 @@ const initialState = {
       },
       resume: {
         title: 'Resume',
+        education: [
+          {
+            id: 1,
+            year: '2018-2022',
+            place: 'Belarusian-Russian University',
+            specialization: 'Transport Logistics',
+            description: 'This is my main specialty.',
+          },
+          {
+            id: 2,
+            year: '2021-2022',
+            place: 'Internet',
+            specialization: 'Frontend Development',
+            description:
+              'During this period of time I learned HTML, CSS(SCSS) and JavaScript, as well as Gulp, Git and React JS.',
+          },
+        ],
+        experience: [
+          {
+            id: 1,
+            year: '2022-2024',
+            place: 'Work place',
+            specialization: 'Logistics expert',
+            description:
+              'During this period of time I worked as logistics expert.',
+          },
+          {
+            id: 2,
+            year: '2022-2024',
+            place: 'Work place',
+            specialization: 'Logistics expert',
+            description:
+              'During this period of time I worked as logistics expert.',
+          },
+        ],
       },
     },
     footer: {
@@ -197,6 +232,33 @@ const initialState = {
       },
       resume: {
         title: 'Резюме',
+        education: [
+          {
+            id: 1,
+            year: '2018-2022',
+            place: 'Белорусско-Российский Университет',
+            specialization: 'Транспортная логистика',
+            description: 'Моя основная специальность.',
+          },
+          {
+            id: 2,
+            year: '2021-2022',
+            place: 'Интернет',
+            specialization: 'Фронтенд разработчик',
+            description:
+              'В этот период времени я изучил HTML, CSS и JavaScript, а также Gulp, Git и React JS.',
+          },
+        ],
+        experience: [
+          {
+            id: 1,
+            year: '2022-2024',
+            place: 'Будущее место работы',
+            specialization: 'Специалист по логистике',
+            description:
+              'В этот период времени я работал по своей специальности.',
+          },
+        ],
       },
     },
     footer: {

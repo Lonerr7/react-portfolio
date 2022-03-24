@@ -1,6 +1,6 @@
-@import '../../../../vars.scss';
+@import '../../../../../vars.scss';
 
-.whatIDo {
+.resumeItems {
   &__title {
     @extend %heading;
 
@@ -11,11 +11,5 @@
     &::after {
       @extend %heading-small-line;
     }
-  }
-
-  &__items {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
   }
 }

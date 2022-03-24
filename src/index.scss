@@ -12,6 +12,8 @@ body[data-theme='light'] {
   --shadow: rgba(0, 0, 0, 0.1);
   --footer-border: #eee;
   --footer-text-link: #aaa;
+  --resume-subtitle: #666;
+  --resume-borderline: #f5f6f9;
 }
 
 body[data-theme='dark'] {
@@ -28,6 +30,8 @@ body[data-theme='dark'] {
   --shadow: rgba(0, 0, 0, 0.8);
   --footer-border: #333;
   --footer-text-link: #ddd;
+  --resume-subtitle: #aaa;
+  --resume-borderline: #333;
 }
 
 body[data-language='ru'] {

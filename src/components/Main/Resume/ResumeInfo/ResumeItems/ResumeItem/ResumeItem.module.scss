@@ -1,0 +1,80 @@
+.resumeItem {
+  padding: 0 0 20px 0;
+  position: relative;
+
+  &:not(:nth-child(1)) {
+    padding-top: 25px;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+      background-color: transparent;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    left: 15px;
+    top: 0;
+    background-color: var(--resume-borderline);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: calc(100% - 15px);
+    left: 15px;
+    bottom: 0;
+    background-color: var(--resume-borderline);
+  }
+
+  &__datePlace {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 10;
+    background-color: var(--bg-color);
+  }
+
+  &__date {
+    color: var(--text-color);
+    padding: 0 10px;
+    border: 2px solid var(--border-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 23px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+
+  &__place {
+    color: var(--resume-subtitle);
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  &__box {
+    margin-left: 40px;
+  }
+
+  &__title {
+    color: var(--h-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 24.5px;
+  }
+}
