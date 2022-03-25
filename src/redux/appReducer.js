@@ -1,8 +1,9 @@
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiSass, DiGulp } from 'react-icons/di';
 import { IoLogoJavascript, IoMdConstruct } from 'react-icons/io';
-import { SiW3C } from 'react-icons/si';
+import { SiW3C, SiUdemy } from 'react-icons/si';
 import { FaGit, FaReact } from 'react-icons/fa';
+import { RiEnglishInput } from 'react-icons/ri';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -136,6 +137,29 @@ const initialState = {
               'During this period of time I worked as logistics expert.',
           },
         ],
+        certificates: {
+          title: 'Certificates',
+          items: [
+            {
+              id: 1,
+              title: 'FCE (B2 First)',
+              descr:
+                'International English exam, accepted by thousands of businesses and educational institutions worldwide.',
+              date: 'August 2019',
+              icon: <RiEnglishInput />,
+              to: 'https://drive.google.com/file/d/1NR1GC5mFtC5eVg5WhsylMwSV3eRHi0_Q/view',
+            },
+            {
+              id: 2,
+              title:
+                'The Complete JavaScript Course 2022: From Zero to Expert!',
+              descr: 'Udemy JavaScript course by Jonas Schmedtmann.',
+              date: '24 March 2022',
+              icon: <SiUdemy />,
+              to: 'https://www.udemy.com/certificate/UC-f23b246e-5d8c-4666-9d66-9fa66c0ea31f/',
+            },
+          ],
+        },
       },
     },
     footer: {
@@ -259,6 +283,30 @@ const initialState = {
               'В этот период времени я работал по своей специальности.',
           },
         ],
+        certificates: {
+          title: 'Сертификаты',
+          items: [
+            {
+              id: 1,
+              title: 'FCE (B2 First)',
+              descr:
+                'Международный экзамен Английского языка, результат которого принимается многими работодателями и учебными заведениями по всему миру.',
+              date: 'Август 2019',
+              icon: <RiEnglishInput />,
+              to: 'https://drive.google.com/file/d/1NR1GC5mFtC5eVg5WhsylMwSV3eRHi0_Q/view',
+            },
+            {
+              id: 2,
+              title:
+                'The Complete JavaScript Course 2022: From Zero to Expert!',
+              descr:
+                'Курс по JavaScript на платформе Udemy от преподавателя Jonas Schmedtmann.',
+              date: '24 Марта 2022',
+              icon: <SiUdemy />,
+              to: 'https://www.udemy.com/certificate/UC-f23b246e-5d8c-4666-9d66-9fa66c0ea31f/',
+            },
+          ],
+        },
       },
     },
     footer: {

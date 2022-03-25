@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import PageHeader from '../../common/PageHeader/PageHeader';
+import Certificates from './Certificates/Certificates';
 import s from './Resume.module.scss';
 import ResumeInfo from './ResumeInfo/ResumeInfo';
 
@@ -13,6 +14,7 @@ const Resume = ({ resume }) => {
         educationItems={resume.education}
         experienceItems={resume.experience}
       />
+      <Certificates certificates={resume.certificates.items} title={resume.certificates.title} />
     </div>
   );
 };

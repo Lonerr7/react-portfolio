@@ -14,6 +14,8 @@ body[data-theme='light'] {
   --footer-text-link: #aaa;
   --resume-subtitle: #666;
   --resume-borderline: #f5f6f9;
+  --certificate-imgBox: #f5f5f5;
+  --descr-color: #777;
 }
 
 body[data-theme='dark'] {
@@ -32,6 +34,8 @@ body[data-theme='dark'] {
   --footer-text-link: #ddd;
   --resume-subtitle: #aaa;
   --resume-borderline: #333;
+  --certificate-imgBox: #444;
+  --descr-color: #aaaaaa;
 }
 
 body[data-language='ru'] {

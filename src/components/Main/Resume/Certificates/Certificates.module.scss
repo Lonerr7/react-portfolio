@@ -1,0 +1,23 @@
+@import '../../../../vars.scss';
+
+.certificates {
+  padding-top: 20px;
+
+  &__title {
+    @extend %heading;
+
+    &::before {
+      @extend %heading-big-line;
+    }
+
+    &::after {
+      @extend %heading-small-line;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
