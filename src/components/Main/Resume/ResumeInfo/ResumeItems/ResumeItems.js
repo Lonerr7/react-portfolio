@@ -2,7 +2,6 @@ import ResumeItem from './ResumeItem/ResumeItem';
 import s from './ResumeItems.module.scss';
 
 const ResumeItems = ({ title, items }) => {
-  console.log(items);
   const elements = items.map((i) => (
     <ResumeItem
       key={i.id}

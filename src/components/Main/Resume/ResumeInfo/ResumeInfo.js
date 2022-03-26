@@ -2,13 +2,13 @@ import s from './ResumeInfo.module.scss';
 import Container from '../../../common/Container/Container';
 import ResumeItems from './ResumeItems/ResumeItems';
 
-const ResumeInfo = ({ educationItems, experienceItems }) => {
+const ResumeInfo = ({ education, experience }) => {
   return (
     <div className={s.resumeInfo}>
       <Container>
         <div className={s.resumeInfo__inner}>
-          <ResumeItems title="Education" items={educationItems} />
-          <ResumeItems title="Experience" items={experienceItems} />
+          <ResumeItems title={education.title} items={education.items} />
+          <ResumeItems title={experience.title} items={experience.items} />
         </div>
       </Container>
     </div>

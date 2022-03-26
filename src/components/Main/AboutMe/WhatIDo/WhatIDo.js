@@ -2,14 +2,14 @@ import { connect } from 'react-redux';
 import s from './WhatIDo.module.scss';
 import WhatIDoItem from './WhatIDoItem/WhatIDoItem';
 
-const WhatIDo = (props) => {
-  const elements = props.skills.map((s) => (
+const WhatIDo = ({ skills }) => {
+  const elements = skills.items.map((s) => (
     <WhatIDoItem key={s.id} title={s.title} img={s.img} text={s.text} />
   ));
 
   return (
     <section className={s.whatIDo}>
-      <h2 className={s.whatIDo__title}>What I Do</h2>
+      <h2 className={s.whatIDo__title}>{skills.title}</h2>
       <div className={s.whatIDo__items}>{elements}</div>
     </section>
   );

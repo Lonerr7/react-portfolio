@@ -12,8 +12,8 @@ const Resume = ({ resume }) => {
     <div className={s.resume}>
       <PageHeader title={resume.title} />
       <ResumeInfo
-        educationItems={resume.education}
-        experienceItems={resume.experience}
+        education={resume.education}
+        experience={resume.experience}
       />
       <Certificates certificates={resume.certificates.items} title={resume.certificates.title} />
       <Skills skills={resume.skills} />
