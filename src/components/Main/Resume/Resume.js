@@ -3,6 +3,7 @@ import PageHeader from '../../common/PageHeader/PageHeader';
 import Certificates from './Certificates/Certificates';
 import s from './Resume.module.scss';
 import ResumeInfo from './ResumeInfo/ResumeInfo';
+import Skills from './Skills/Skills';
 
 // TODO: додлеать ResumeInfo и мб сделать блок сертификатов
 
@@ -15,6 +16,7 @@ const Resume = ({ resume }) => {
         experienceItems={resume.experience}
       />
       <Certificates certificates={resume.certificates.items} title={resume.certificates.title} />
+      <Skills skills={resume.skills} />
     </div>
   );
 };

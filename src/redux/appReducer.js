@@ -160,6 +160,33 @@ const initialState = {
             },
           ],
         },
+        skills: {
+          codingSkills: {
+            title: 'Coding Skills',
+            items: [
+              {
+                id: 1,
+                title: 'HTML/CSS',
+                percent: 100,
+              },
+              {
+                id: 2,
+                title: 'JavaScript',
+                percent: 85,
+              },
+              {
+                id: 3,
+                title: 'ReactJS',
+                percent: 80,
+              },
+              {
+                id: 4,
+                title: 'GIT',
+                percent: 70,
+              },
+            ],
+          },
+        },
       },
     },
     footer: {
@@ -306,6 +333,33 @@ const initialState = {
               to: 'https://www.udemy.com/certificate/UC-f23b246e-5d8c-4666-9d66-9fa66c0ea31f/',
             },
           ],
+        },
+        skills: {
+          codingSkills: {
+            title: 'Навыки написания кода',
+            items: [
+              {
+                id: 1,
+                title: 'HTML/CSS',
+                percent: 100,
+              },
+              {
+                id: 2,
+                title: 'JavaScript',
+                percent: 85,
+              },
+              {
+                id: 3,
+                title: 'ReactJS',
+                percent: 80,
+              },
+              {
+                id: 4,
+                title: 'GIT',
+                percent: 70,
+              },
+            ],
+          },
         },
       },
     },

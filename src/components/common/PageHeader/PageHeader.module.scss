@@ -1,6 +1,7 @@
 .pageHeader {
   border-top: 2px solid var(--footer-border);
   border-bottom: 2px solid var(--footer-border);
+  background-color: var(--page-header);
 
   &__inner {
     padding: 65px 30px;
