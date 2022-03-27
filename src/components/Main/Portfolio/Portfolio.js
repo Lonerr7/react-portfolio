@@ -9,7 +9,7 @@ const Portfolio = ({ portfolio }) => {
     <div className={s.portfolio}>
       <PageHeader title={portfolio.title} />
       <Container>
-        <PortfolioItems items={portfolio.items} />
+        <PortfolioItems items={portfolio.currentItems} />
       </Container>
     </div>
   );

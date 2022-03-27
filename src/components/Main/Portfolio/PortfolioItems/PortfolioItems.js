@@ -1,4 +1,4 @@
-import PortfolioControls from './PortfolioControls/PortfolioControls';
+import PortfolioControlsContainer from './PortfolioControls/PortfolioControlsContainer/PortfolioControlsContainer';
 import PortfolioItem from './PortfolioItem/PortfolioItem';
 import s from './PortfolioItems.module.scss';
 
@@ -15,7 +15,7 @@ const PortfolioItems = ({ items }) => {
 
   return (
     <div className={s.portfolioItems}>
-      <PortfolioControls />
+      <PortfolioControlsContainer />
       <div className={s.portfolioItems__inner}>{elements}</div>
     </div>
   );
