@@ -1,0 +1,10 @@
+.portfolioItems {
+  padding-top: 65px;
+
+  &__inner {
+    padding-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 16px;
+  }
+}

@@ -11,6 +11,7 @@ import weatherPic from '../assets/images/Main/Portfolio/weather.png';
 import socialNetworkPic from '../assets/images/Main/Portfolio/react-social-network.png';
 import coursesPic from '../assets/images/Main/Portfolio/computer-courses.png';
 import sassLandingPic from '../assets/images/Main/Portfolio/sass-landing.png';
+import weFixItAllPic from '../assets/images/Main/Portfolio/we-fix-it-all.png';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -212,27 +213,30 @@ const initialState = {
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
-              'Simple React Todo List application to train CRUD operations. Used Redux for state management.',
+              'Simple React Todo List application to train CRUD operations. Used Redux for state management. LocalStorage API.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-todo-list/',
           },
           {
             id: 2,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
-              'React application which fetches a list of countries, their information and neighbors and displays it. Redux, redux-thunk, axios, react-router-dom, search by letter filtration, theme switching.',
+              'React application which fetches a list of countries, their information and neighbors and displays it. Redux, redux-thunk, axios, react-router-dom, search by letter filtration, theme switching, localStorage API.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Rest-Countries/',
           },
           {
             id: 3,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
-              'React application which gets current weather of the city, 5-day and 7-day weather. Has a feature to choose a country from the list. Used Redux, redux-thunk, axios, theme switching.',
+              'React application which gets current weather of the city, 5-day and 7-day weather. Has a feature to choose a country from the list. Used Redux, redux-thunk, axios, theme switching, localStorage API',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Weather/',
           },
           {
             id: 4,
@@ -242,33 +246,37 @@ const initialState = {
               'React social network application, which is a part of It Kamasutra ReactJs Course. I learned the basics of React by developing this app. Redux, redux-thunk, axios, formik, react-router-dom and more.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Social-Network-2/',
           },
           {
             id: 5,
-            title: 'Computer Courses Langing Page',
+            title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
               'Basic HTML/CSS landing page of computer courses. Used Gulp, SCSS, JavaScript and JQuery.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
           },
           {
             id: 6,
-            title: 'We Fix It All Langing Page',
-            imgSrc: coursesPic,
+            title: 'We Fix It All Landing Page',
+            imgSrc: weFixItAllPic,
             descr:
               'Basic HTML/CSS landing page of devices repair organization. Used Gulp, SCSS, JavaScript and JQuery.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
           },
           {
             id: 7,
-            title: 'Sass Langing Page',
+            title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
               'Basic HTML/CSS landing page to train HTML/CSS skills. Used Gulp, SCSS and JavaScript.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
           },
         ],
       },
@@ -463,27 +471,30 @@ const initialState = {
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
-              'Простое React приложение по выводу списка дел для тренирвки CRUD навыков. Использовал Redux для контроля состояния.',
+              'Простое React приложение по выводу списка дел для тренирвки CRUD навыков. Использовал Redux для контроля состояния и локальное хранилище браузера.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-todo-list/',
           },
           {
             id: 2,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
-              'React приложение, которое получает список стран с подробной информацией с API и отображает их. Применил фильтрацию стран по поиску и изменение темы. Использовал Redux, redux-thunk, axios, react-router-dom.',
+              'React приложение, которое получает список стран с подробной информацией с API и отображает их. Применил фильтрацию стран по поиску и изменение темы. Использовал Redux, redux-thunk, axios, react-router-dom, localStorage API.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Rest-Countries/',
           },
           {
             id: 3,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
-              'React приложение, которое получает с API текущую погоду в городе, а также погоду на 5 и 7 дней. Имеет возможность переключения страны на страну из списка и смену темы. Использовал Redux, redux-thunk, axios.',
+              'React приложение, которое получает с API текущую погоду в городе, а также погоду на 5 и 7 дней. Имеет возможность переключения страны на страну из списка и смену темы. Использовал Redux, redux-thunk, axios, localStorage API.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Weather/',
           },
           {
             id: 4,
@@ -493,33 +504,37 @@ const initialState = {
               'Приложение социальной сети на React, которое является частью курса по React от It Kamasutra. Я изучил основы ReactJs разрабатывая это приложение. Использовал Redux, redux-thunk, axios, formik, react-router-dom.',
             technologies: 'ReactJs',
             filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Social-Network-2/',
           },
           {
             id: 5,
-            title: 'Computer Courses Langing Page',
+            title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
               'Простая HTML/CSS страница компьютерных курсов. Использовал Gulp, SCSS, JavaScript и JQuery.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
           },
           {
             id: 6,
-            title: 'We Fix It All Langing Page',
-            imgSrc: coursesPic,
+            title: 'We Fix It All Landing Page',
+            imgSrc: weFixItAllPic,
             descr:
               'Простая HTML/CSS страница организации по ремонту девайсов. Использовал Gulp, SCSS, JavaScript и JQuery.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
           },
           {
             id: 7,
-            title: 'Sass Langing Page',
+            title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
               'Просая  Basic HTML/CSS страница для тренировки навыков по HTML/CSS. Использовал Gulp, SCSS и JavaScript.',
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
+            to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
           },
         ],
       },

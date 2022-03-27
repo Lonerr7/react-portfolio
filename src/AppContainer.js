@@ -10,6 +10,7 @@ const AppContainer = ({
   language,
   currentLanguageInfo,
 }) => {
+  // localStorage theme initialziation
   useEffect(() => {
     if (localStorage.getItem('theme')) {
       changeTheme(localStorage.getItem('theme'));
@@ -19,6 +20,7 @@ const AppContainer = ({
     // eslint-disable-next-line
   }, []);
 
+  // localStorage language initialziation
   useEffect(() => {
     if (localStorage.getItem('language')) {
       changeLanguage(localStorage.getItem('language'));

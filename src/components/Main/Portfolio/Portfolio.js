@@ -1,14 +1,22 @@
+import { connect } from 'react-redux';
+import Container from '../../common/Container/Container';
+import PageHeader from '../../common/PageHeader/PageHeader';
 import s from './Portfolio.module.scss';
-import pic from '../../../assets/images/Main/Portfolio/sass-landing.png';
+import PortfolioItems from './PortfolioItems/PortfolioItems';
 
-const Portfolio = () => {
+const Portfolio = ({ portfolio }) => {
   return (
     <div className={s.portfolio}>
-      <div>
-        <img src={pic} alt="todo" />
-      </div>
+      <PageHeader title={portfolio.title} />
+      <Container>
+        <PortfolioItems items={portfolio.items} />
+      </Container>
     </div>
   );
 };
 
-export default Portfolio;
+const mapStateToProps = (state) => ({
+  portfolio: state.app.currentLanguageInfo.main.portfolio,
+});
+
+export default connect(mapStateToProps, null)(Portfolio);
