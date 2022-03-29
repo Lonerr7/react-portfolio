@@ -12,7 +12,6 @@ import socialNetworkPic from '../assets/images/Main/Portfolio/react-social-netwo
 import coursesPic from '../assets/images/Main/Portfolio/computer-courses.png';
 import sassLandingPic from '../assets/images/Main/Portfolio/sass-landing.png';
 import weFixItAllPic from '../assets/images/Main/Portfolio/we-fix-it-all.png';
-import { filterPortfolioItems } from '../helpers/helpers';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -220,6 +219,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://lonerr7.github.io/React-todo-list/',
+            githubDescr: 'Watch code',
           },
           {
             id: 2,
@@ -230,6 +231,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            githubDescr: 'Watch code',
           },
           {
             id: 3,
@@ -240,6 +243,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://lonerr7.github.io/React-Weather/',
+            githubDescr: 'Watch code',
           },
           {
             id: 4,
@@ -250,6 +255,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            githubDescr: 'Watch code',
           },
           {
             id: 5,
@@ -260,6 +267,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
+            github: 'https://github.com/Lonerr7/Computer-Courses-dev-',
+            githubDescr: 'Watch code',
           },
           {
             id: 6,
@@ -270,6 +279,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
+            github: 'https://github.com/Lonerr7/We-Fix-It-All-dev',
+            githubDescr: 'Watch code',
           },
           {
             id: 7,
@@ -280,6 +291,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
+            github: 'https://github.com/Lonerr7/SaaS-Landing',
+            githubDescr: 'Watch code',
           },
         ],
         currentItems: [
@@ -292,6 +305,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://lonerr7.github.io/React-todo-list/',
+            githubDescr: 'Watch code',
           },
           {
             id: 2,
@@ -302,6 +317,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            githubDescr: 'Watch code',
           },
           {
             id: 3,
@@ -312,6 +329,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://lonerr7.github.io/React-Weather/',
+            githubDescr: 'Watch code',
           },
           {
             id: 4,
@@ -322,6 +341,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            githubDescr: 'Watch code',
           },
           {
             id: 5,
@@ -332,6 +353,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
+            github: 'https://github.com/Lonerr7/Computer-Courses-dev-',
+            githubDescr: 'Watch code',
           },
           {
             id: 6,
@@ -342,6 +365,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
+            github: 'https://github.com/Lonerr7/We-Fix-It-All-dev',
+            githubDescr: 'Watch code',
           },
           {
             id: 7,
@@ -352,6 +377,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
+            github: 'https://github.com/Lonerr7/SaaS-Landing',
+            githubDescr: 'Watch code',
           },
         ],
       },
@@ -550,6 +577,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://lonerr7.github.io/React-todo-list/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 2,
@@ -560,6 +589,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 3,
@@ -570,6 +601,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://lonerr7.github.io/React-Weather/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 4,
@@ -580,6 +613,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 5,
@@ -590,6 +625,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
+            github: 'https://github.com/Lonerr7/Computer-Courses-dev-',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 6,
@@ -600,6 +637,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
+            github: 'https://github.com/Lonerr7/We-Fix-It-All-dev',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 7,
@@ -610,6 +649,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
+            github: 'https://github.com/Lonerr7/SaaS-Landing',
+            githubDescr: 'Смотреть код',
           },
         ],
         currentItems: [
@@ -622,6 +663,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://lonerr7.github.io/React-todo-list/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 2,
@@ -632,6 +675,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 3,
@@ -642,6 +687,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://lonerr7.github.io/React-Weather/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 4,
@@ -652,6 +699,8 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 5,
@@ -662,6 +711,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/Computer-Courses-Complete/',
+            github: 'https://github.com/Lonerr7/Computer-Courses-dev-',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 6,
@@ -672,6 +723,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/We-Fix-It-All-Complete/',
+            github: 'https://github.com/Lonerr7/We-Fix-It-All-dev',
+            githubDescr: 'Смотреть код',
           },
           {
             id: 7,
@@ -682,6 +735,8 @@ const initialState = {
             technologies: 'HTML/CSS(SCSS)/JS(JQuery)/Gulp',
             filterProp: 'landing',
             to: 'https://lonerr7.github.io/SaaS-Landing-Complete/',
+            github: 'https://github.com/Lonerr7/SaaS-Landing',
+            githubDescr: 'Смотреть код',
           },
         ],
       },

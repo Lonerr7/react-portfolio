@@ -1,6 +1,6 @@
 import s from './PortfolioItem.module.scss';
 
-const PortfolioItem = ({ imgSrc, title, descr, to }) => {
+const PortfolioItem = ({ imgSrc, title, descr, to, github, githubDescr }) => {
   return (
     <div className={s.portfolioItem}>
       <a
@@ -15,6 +15,9 @@ const PortfolioItem = ({ imgSrc, title, descr, to }) => {
         <h4 className={s.portfolioItem__title}>{title}</h4>
       </a>
       <p className={s.portfolioItem__descr}>{descr}</p>
+      <a className={s.portfolioItem__githubLink} href={github} target="_blank" rel="noreferrer">
+        {githubDescr}
+      </a>
     </div>
   );
 };

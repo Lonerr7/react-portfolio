@@ -1,6 +1,10 @@
 .portfolioItem {
   &__link {
     display: block;
+
+    &:hover {
+      text-decoration-color: var(--h-color);
+    }
   }
 
   &__imgBox {
@@ -33,5 +37,11 @@
   &__descr {
     line-height: 18px;
     color: var(--text-color);
+    margin-bottom: 7px;
+  }
+
+  &__githubLink {
+    color: var(--h-color);
+    font-weight: 500;
   }
 }

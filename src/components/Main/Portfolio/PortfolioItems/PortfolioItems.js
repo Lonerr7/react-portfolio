@@ -10,6 +10,8 @@ const PortfolioItems = ({ items }) => {
       descr={i.descr}
       imgSrc={i.imgSrc}
       to={i.to}
+      github={i.github}
+      githubDescr={i.githubDescr}
     />
   ));
 
