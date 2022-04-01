@@ -219,7 +219,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
-            github: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://github.com/Lonerr7/React-todo-list',
             githubDescr: 'Watch code',
           },
           {
@@ -231,7 +231,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
-            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://github.com/Lonerr7/React-Rest-Countries',
             githubDescr: 'Watch code',
           },
           {
@@ -243,7 +243,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
-            github: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://github.com/Lonerr7/React-Weather',
             githubDescr: 'Watch code',
           },
           {
@@ -255,7 +255,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
-            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://github.com/Lonerr7/React-Social-Network-2',
             githubDescr: 'Watch code',
           },
           {
@@ -305,7 +305,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
-            github: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://github.com/Lonerr7/React-todo-list',
             githubDescr: 'Watch code',
           },
           {
@@ -317,7 +317,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
-            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://github.com/Lonerr7/React-Rest-Countries',
             githubDescr: 'Watch code',
           },
           {
@@ -329,7 +329,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
-            github: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://github.com/Lonerr7/React-Weather',
             githubDescr: 'Watch code',
           },
           {
@@ -341,7 +341,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
-            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://github.com/Lonerr7/React-Social-Network-2',
             githubDescr: 'Watch code',
           },
           {
@@ -577,7 +577,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
-            github: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://github.com/Lonerr7/React-todo-list',
             githubDescr: 'Смотреть код',
           },
           {
@@ -589,7 +589,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
-            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://github.com/Lonerr7/React-Rest-Countries',
             githubDescr: 'Смотреть код',
           },
           {
@@ -601,7 +601,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
-            github: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://github.com/Lonerr7/React-Weather',
             githubDescr: 'Смотреть код',
           },
           {
@@ -613,7 +613,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
-            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://github.com/Lonerr7/React-Social-Network-2',
             githubDescr: 'Смотреть код',
           },
           {
@@ -663,7 +663,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-todo-list/',
-            github: 'https://lonerr7.github.io/React-todo-list/',
+            github: 'https://github.com/Lonerr7/React-todo-list',
             githubDescr: 'Смотреть код',
           },
           {
@@ -675,7 +675,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Rest-Countries/',
-            github: 'https://lonerr7.github.io/React-Rest-Countries/',
+            github: 'https://github.com/Lonerr7/React-Rest-Countries',
             githubDescr: 'Смотреть код',
           },
           {
@@ -687,7 +687,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Weather/',
-            github: 'https://lonerr7.github.io/React-Weather/',
+            github: 'https://github.com/Lonerr7/React-Weather',
             githubDescr: 'Смотреть код',
           },
           {
@@ -699,7 +699,7 @@ const initialState = {
             technologies: 'ReactJs',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Social-Network-2/',
-            github: 'https://lonerr7.github.io/React-Social-Network-2/',
+            github: 'https://github.com/Lonerr7/React-Social-Network-2',
             githubDescr: 'Смотреть код',
           },
           {
