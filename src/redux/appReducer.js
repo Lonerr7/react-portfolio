@@ -1,9 +1,14 @@
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiSass, DiGulp } from 'react-icons/di';
-import { IoLogoJavascript, IoMdConstruct } from 'react-icons/io';
+import {
+  IoLogoJavascript,
+  IoMdConstruct,
+  IoIosPhonePortrait,
+} from 'react-icons/io';
 import { SiW3C, SiUdemy } from 'react-icons/si';
-import { FaGit, FaReact } from 'react-icons/fa';
+import { FaGit, FaReact, FaTelegramPlane } from 'react-icons/fa';
 import { RiEnglishInput } from 'react-icons/ri';
+import { BsEnvelope } from 'react-icons/bs';
 
 import todoPic from '../assets/images/Main/Portfolio/react-todo-list.png';
 import countriesPic from '../assets/images/Main/Portfolio/react-rest-countries.png';
@@ -382,6 +387,42 @@ const initialState = {
           },
         ],
       },
+      contact: {
+        title: 'Contact',
+        contactInfo: [
+          {
+            id: 1,
+            img: <IoIosPhonePortrait />,
+            title: '+375-29-154-71-02',
+            descr: 'My personal phone number',
+          },
+          {
+            id: 2,
+            img: <FaTelegramPlane />,
+            title: 'https://t.me/nice3guy',
+            descr: 'My personal telegram profile',
+          },
+          {
+            id: 3,
+            img: <BsEnvelope />,
+            title: 'ivan.karabankov@gmail.com',
+            descr: 'My personal e-mail address',
+          },
+        ],
+        contactForm: {
+          title: 'How Can I Help You?',
+          namePh: 'Your Name',
+          nameError: 'Name is required.',
+          emailPh: 'Email Address',
+          emailError: 'Valid email is required.',
+          emailValidation: 'Invalid email format',
+          subjectPh: 'Subject',
+          subjectError: 'Subject is required.',
+          messagePh: 'Message',
+          messageError: 'Please, leave me a message.',
+          buttonText: 'Send message',
+        },
+      },
     },
     footer: {
       designLinkText: 'Design was taken from here',
@@ -739,6 +780,42 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
         ],
+      },
+      contact: {
+        title: 'Контакты',
+        contactInfo: [
+          {
+            id: 1,
+            img: <IoIosPhonePortrait />,
+            title: '+375-29-154-71-02',
+            descr: 'Мой персональный номер телефона',
+          },
+          {
+            id: 2,
+            img: <FaTelegramPlane />,
+            title: 'https://t.me/nice3guy',
+            descr: 'Мой персональный телеграм аккаунт',
+          },
+          {
+            id: 3,
+            img: <BsEnvelope />,
+            title: 'ivan.karabankov@gmail.com',
+            descr: 'Моя персональная рабочая почта',
+          },
+        ],
+        contactForm: {
+          title: 'Как я могу Вам помочь?',
+          namePh: 'Ваше Имя',
+          nameError: 'Введите Ваше имя.',
+          emailPh: 'Ваша почта',
+          emailError: 'Введите Вашу почту.',
+          emailValidation: 'Неправильный формат электронной почты',
+          subjectPh: 'Предмет',
+          subjectError: 'Введите предмет обращения.',
+          messagePh: 'Сообщение',
+          messageError: 'Пожалуйста, напишите мне сообщениие.',
+          buttonText: 'Отправить письмо',
+        },
       },
     },
     footer: {
