@@ -25,3 +25,13 @@
     color: var(--footer-text-link);
   }
 }
+
+@media (max-width: 350px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    margin-bottom: 5px;
+  }
+}
