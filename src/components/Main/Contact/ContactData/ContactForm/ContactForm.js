@@ -2,6 +2,7 @@ import s from './ContactForm.module.scss';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import TextError from './TextError/TextError';
 import * as yup from 'yup';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = ({ contactForm }) => {
   const {
@@ -32,10 +33,21 @@ const ContactForm = ({ contactForm }) => {
     message: yup.string().required(messageError),
   });
 
+  const onSubmit = (values) => {
+    emailjs
+      .send(`service_eexb4xr`, `template_xe8z7e7`, values, `zdvAJ-1O0OuUkJ5Tj`)
+      .then((res) => console.log(res))
+      .catch((e) => console.log(e));
+  };
+
   return (
     <div className={s.contactForm}>
       <h2 className={s.contactForm__title}>{title}</h2>
-      <Formik validationSchema={validationSchema} initialValues={initialValues}>
+      <Formik
+        validationSchema={validationSchema}
+        initialValues={initialValues}
+        onSubmit={onSubmit}
+      >
         <Form className={s.contactForm__form}>
           <div className={s.contactForm__formControls}>
             <div className={s.contactForm__formControl}>

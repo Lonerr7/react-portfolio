@@ -70,11 +70,12 @@
     border-radius: 30px;
     color: var(--logo-color);
     background-color: var(--btn-bg);
-    padding: 11px 29px;
+    padding: 9px 29px;
     transition: all .3s ease;
 
     &:hover {
       background-color: var(--border-color);
+      color: #fff;
     }
   }
 }
