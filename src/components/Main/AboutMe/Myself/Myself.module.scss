@@ -21,7 +21,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     margin-right: 55px;
-    box-shadow: 0 0 25px 0 var(--shadow)
+    box-shadow: 0 0 25px 0 var(--shadow);
+    flex-shrink: 0;
   }
 
   &__textBox {
@@ -91,6 +92,83 @@
     &:hover {
       background-color: #d5d5d5;
       color: #333;
+    }
+  }
+}
+
+@media (max-width: 961px) {
+  .myself {
+    &__imgBox {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 853px) {
+  .myself {
+    &__imgBox {
+      margin-right: 35px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+    }
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 783px) {
+  .myself {
+    &__box {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__imgBox {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    &__links {
+      justify-content: center;
+    }
+
+    &__textBox {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .myself {
+    padding: 40px 0;
+
+    &__imgBox {
+      width: 300px;
+      height: 300px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .myself {
+    &__title {
+      font-size: 33px;
     }
   }
 }
