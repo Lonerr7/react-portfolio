@@ -2,9 +2,8 @@ import s from './ContactForm.module.scss';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import TextError from './TextError/TextError';
 import * as yup from 'yup';
-import emailjs from '@emailjs/browser';
 
-const ContactForm = ({ contactForm }) => {
+const ContactForm = ({ contactForm, statusMessage, sendEmail }) => {
   const {
     title,
     namePh,
@@ -34,10 +33,7 @@ const ContactForm = ({ contactForm }) => {
   });
 
   const onSubmit = (values) => {
-    emailjs
-      .send(`service_eexb4xr`, `template_xe8z7e7`, values, `zdvAJ-1O0OuUkJ5Tj`)
-      .then((res) => console.log(res))
-      .catch((e) => console.log(e));
+    sendEmail(values);
   };
 
   return (
@@ -100,6 +96,9 @@ const ContactForm = ({ contactForm }) => {
           </div>
         </Form>
       </Formik>
+      <p className={s.contactForm__statusMessage}>
+        {statusMessage ? statusMessage : ''}
+      </p>
     </div>
   );
 };
