@@ -2,8 +2,17 @@ import s from './ContactForm.module.scss';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import TextError from './TextError/TextError';
 import * as yup from 'yup';
+import { connect } from 'react-redux';
+import { sendEmail } from '../../../../../redux/formReducer';
+import Preloader from '../../../../common/Preloader/Preloader';
 
-const ContactForm = ({ contactForm, statusMessage, sendEmail }) => {
+const ContactForm = ({
+  contactForm,
+  statusMessage,
+  sendEmail,
+  statusCode,
+  isSending,
+}) => {
   const {
     title,
     namePh,
@@ -79,9 +88,12 @@ const ContactForm = ({ contactForm, statusMessage, sendEmail }) => {
               />
               <ErrorMessage name="subject" component={TextError} />
             </div>
-            <button className={s.contactForm__btn} type="submit">
-              {buttonText}
-            </button>
+            <div className={s.contactForm__box}>
+              <button className={s.contactForm__btn} type="submit">
+                {buttonText}
+              </button>
+              {isSending ? <Preloader /> : ''}
+            </div>
           </div>
           <div className={s.contactForm__textareaBox}>
             <label htmlFor="message" />
@@ -96,11 +108,28 @@ const ContactForm = ({ contactForm, statusMessage, sendEmail }) => {
           </div>
         </Form>
       </Formik>
-      <p className={s.contactForm__statusMessage}>
+      <p
+        className={
+          statusCode === 200
+            ? s.contactForm__statusMessage
+            : `${s.contactForm__statusMessage} ${s.error}`
+        }
+      >
         {statusMessage ? statusMessage : ''}
       </p>
     </div>
   );
 };
 
-export default ContactForm;
+const mapStateToProps = (state) => ({
+  contactForm: state.app.currentLanguageInfo.main.contact.contactForm,
+  statusMessage: state.form.statusMessage,
+  statusCode: state.form.statusCode,
+  isSending: state.form.isSending,
+});
+
+const dispatchToProps = {
+  sendEmail,
+};
+
+export default connect(mapStateToProps, dispatchToProps)(ContactForm);

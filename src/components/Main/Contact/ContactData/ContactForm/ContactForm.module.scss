@@ -65,17 +65,35 @@
     }
   }
 
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
   &__btn {
+    display: inline-block;
     border: 2px solid var(--border-color);
     border-radius: 30px;
     color: var(--logo-color);
     background-color: var(--btn-bg);
     padding: 9px 29px;
     transition: all .3s ease;
+    margin-right: 30px;
 
     &:hover {
       background-color: var(--border-color);
       color: #fff;
     }
   }
+
+  &__statusMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--border-color);
+  }
+}
+
+.error {
+  color: #ff4e4e;
 }
