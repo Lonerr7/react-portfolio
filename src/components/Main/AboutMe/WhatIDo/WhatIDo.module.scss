@@ -19,3 +19,20 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 550px) {
+  .whatIDo {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .whatIDo {
+    
+    &__items {
+      gap: 30px;
+    }
+  }
+}

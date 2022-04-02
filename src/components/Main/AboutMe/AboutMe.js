@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div className={s.aboutMe}>
       <Container>
         <Myself />
-        {/* <WhatIDo /> */}
+        <WhatIDo />
       </Container>
     </div>
   );
