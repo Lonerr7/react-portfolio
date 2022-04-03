@@ -45,3 +45,11 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 450px) {
+  .portfolioItem {
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}

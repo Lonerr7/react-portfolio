@@ -8,3 +8,30 @@
     gap: 24px 16px;
   }
 }
+
+@media (max-width: 900px) {
+  .portfolioItems {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolioItems {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 24px 16px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolioItems {
+    padding-top: 32px;
+
+    &__inner {
+      padding-top: 20px;
+    }
+  }
+}
