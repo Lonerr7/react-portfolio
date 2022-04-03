@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
   return (
     <nav className={s.menu}>
-      <RightNav open={open} navArr={props.navArr} />
+      <RightNav open={open} setOpen={setOpen} navArr={props.navArr} />
       <Burger open={open} setOpen={setOpen} />
     </nav>
   );

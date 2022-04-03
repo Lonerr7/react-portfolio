@@ -1,7 +1,7 @@
 import ListItem from './ListItem/ListItem';
 import s from './RightNav.module.scss';
 
-const RightNav = ({ open, navArr }) => {
+const RightNav = ({ open, navArr, setOpen }) => {
   const liElements = navArr.map((l, i) => (
     <ListItem
       key={i}
@@ -9,6 +9,8 @@ const RightNav = ({ open, navArr }) => {
       classLinkTitle={s.menu__listLink}
       data={l.title}
       to={l.to}
+      open={open}
+      setOpen={setOpen}
     />
   ));
 

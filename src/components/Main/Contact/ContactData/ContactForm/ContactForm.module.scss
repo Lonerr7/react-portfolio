@@ -15,9 +15,8 @@
     }
   }
 
-  &__form {
+  &__inner {
     display: flex;
-    align-items: flex-start;
   }
 
   &__formControls {
@@ -77,7 +76,7 @@
     color: var(--logo-color);
     background-color: var(--btn-bg);
     padding: 9px 29px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     margin-right: 30px;
 
     &:hover {
@@ -96,4 +95,27 @@
 
 .error {
   color: #ff4e4e;
+}
+
+@media (max-width: 800px) {
+  .contactForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactForm {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__formControls {
+      width: 100%;
+    }
+
+    &__textareaBox {
+      width: 100%;
+      margin-bottom: 22px;
+    }
+  }
 }

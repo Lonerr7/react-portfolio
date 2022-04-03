@@ -54,57 +54,60 @@ const ContactForm = ({
         onSubmit={onSubmit}
       >
         <Form className={s.contactForm__form}>
-          <div className={s.contactForm__formControls}>
-            <div className={s.contactForm__formControl}>
-              <label htmlFor="name" />
-              <Field
-                className={s.contactForm__input}
-                name="name"
-                id="name"
-                type="text"
-                placeholder={namePh}
-              />
-              <ErrorMessage name="name" component={TextError} />
+          <div className={s.contactForm__inner}>
+            <div className={s.contactForm__formControls}>
+              <div className={s.contactForm__formControl}>
+                <label htmlFor="name" />
+                <Field
+                  className={s.contactForm__input}
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder={namePh}
+                />
+                <ErrorMessage name="name" component={TextError} />
+              </div>
+              <div className={s.contactForm__formControl}>
+                <label htmlFor="email" />
+                <Field
+                  className={s.contactForm__input}
+                  name="email"
+                  id="email"
+                  type="text"
+                  placeholder={emailPh}
+                />
+                <ErrorMessage name="email" component={TextError} />
+              </div>
+              <div className={s.contactForm__formControl}>
+                <label htmlFor="subject" />
+                <Field
+                  className={s.contactForm__input}
+                  name="subject"
+                  id="subject"
+                  type="text"
+                  placeholder={subjectPh}
+                />
+                <ErrorMessage name="subject" component={TextError} />
+              </div>
             </div>
-            <div className={s.contactForm__formControl}>
-              <label htmlFor="email" />
+
+            <div className={s.contactForm__textareaBox}>
+              <label htmlFor="message" />
               <Field
-                className={s.contactForm__input}
-                name="email"
-                id="email"
-                type="text"
-                placeholder={emailPh}
+                className={s.contactForm__textarea}
+                component="textarea"
+                placeholder={messagePh}
+                id="message"
+                name="message"
               />
-              <ErrorMessage name="email" component={TextError} />
-            </div>
-            <div className={s.contactForm__formControl}>
-              <label htmlFor="subject" />
-              <Field
-                className={s.contactForm__input}
-                name="subject"
-                id="subject"
-                type="text"
-                placeholder={subjectPh}
-              />
-              <ErrorMessage name="subject" component={TextError} />
-            </div>
-            <div className={s.contactForm__box}>
-              <button className={s.contactForm__btn} type="submit">
-                {buttonText}
-              </button>
-              {isSending ? <Preloader /> : ''}
+              <ErrorMessage name="message" component={TextError} />
             </div>
           </div>
-          <div className={s.contactForm__textareaBox}>
-            <label htmlFor="message" />
-            <Field
-              className={s.contactForm__textarea}
-              component="textarea"
-              placeholder={messagePh}
-              id="message"
-              name="message"
-            />
-            <ErrorMessage name="message" component={TextError} />
+          <div className={s.contactForm__box}>
+            <button className={s.contactForm__btn} type="submit">
+              {buttonText}
+            </button>
+            {isSending ? <Preloader /> : ''}
           </div>
         </Form>
       </Formik>
