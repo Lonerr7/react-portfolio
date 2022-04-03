@@ -22,3 +22,17 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 760px) {
+  .certificates {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 618px) {
+  .certificates {
+    padding-bottom: 30px;
+  }
+}

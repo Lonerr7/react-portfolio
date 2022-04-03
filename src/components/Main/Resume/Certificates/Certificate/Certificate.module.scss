@@ -48,3 +48,14 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 395px) {
+  .certificate {
+    flex-direction: column;
+
+    &__logoBox {
+      width: 100%;
+      height: 80px; 
+    }
+  }
+}

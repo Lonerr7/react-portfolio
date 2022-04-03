@@ -16,8 +16,8 @@ const App = () => {
         <div className="main__inner">
           <Routes>
             <Route path="/" element={<AboutMe />} />
-            {/* <Route path="/resume" element={<Resume />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </div>

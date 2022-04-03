@@ -5,8 +5,6 @@ import s from './Resume.module.scss';
 import ResumeInfo from './ResumeInfo/ResumeInfo';
 import Skills from './Skills/Skills';
 
-// TODO: додлеать ResumeInfo и мб сделать блок сертификатов
-
 const Resume = ({ resume }) => {
   return (
     <div className={s.resume}>
