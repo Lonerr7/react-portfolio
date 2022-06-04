@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './ContactInfoItem.module.scss';
 
 const ContactInfoItem = ({ img, title, descr }) => {

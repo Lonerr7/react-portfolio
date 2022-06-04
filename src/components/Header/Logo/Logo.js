@@ -9,7 +9,7 @@ const Logo = (props) => {
 
   return (
     <div className={s.logoBox}>
-      <NavLink className={s.logo__link} to="/">
+      <NavLink className={s.logo__link} to="/react-portfolio">
         <div className={s.logo}>
           <p className={s.logo__symbol}>{props.logoInfo.img}</p>
           <p className={s.logo__text}>

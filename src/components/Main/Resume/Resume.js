@@ -9,11 +9,11 @@ const Resume = ({ resume }) => {
   return (
     <div className={s.resume}>
       <PageHeader title={resume.title} />
-      <ResumeInfo
-        education={resume.education}
-        experience={resume.experience}
+      <ResumeInfo education={resume.education} experience={resume.experience} />
+      <Certificates
+        certificates={resume.certificates.items}
+        title={resume.certificates.title}
       />
-      <Certificates certificates={resume.certificates.items} title={resume.certificates.title} />
       <Skills skills={resume.skills} />
     </div>
   );

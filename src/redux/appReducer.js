@@ -5,7 +5,7 @@ import {
   IoMdConstruct,
   IoIosPhonePortrait,
 } from 'react-icons/io';
-import { SiW3C, SiUdemy } from 'react-icons/si';
+import { SiW3C, SiUdemy, SiTypescript } from 'react-icons/si';
 import { FaGit, FaReact, FaTelegramPlane } from 'react-icons/fa';
 import { RiEnglishInput } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
@@ -36,19 +36,19 @@ const initialState = {
       nav: [
         {
           title: 'About me',
-          to: '/',
+          to: '/react-portfolio',
         },
         {
           title: 'Resume',
-          to: '/resume',
+          to: '/react-portfolio/resume',
         },
         {
           title: 'Portfolio',
-          to: '/portfolio',
+          to: '/react-portfolio/portfolio',
         },
         {
           title: 'Contact',
-          to: '/contact',
+          to: '/react-portfolio/contact',
         },
       ],
     },
@@ -87,30 +87,42 @@ const initialState = {
             },
             {
               id: 4,
+              title: 'TypeScript',
+              img: <SiTypescript />,
+              text: 'Learned TypeScript to prevent errors during development and to strictly type my code.',
+            },
+            {
+              id: 5,
               title: 'ReactJS + Redux',
               img: <FaReact />,
               text: 'Learned ReactJS to make dymanic single page web-applications. Used Redux for state management, as well as all related libraries: react-redux, redux-thunk. I also have experience with react-router-dom.',
             },
             {
-              id: 5,
+              id: 6,
+              title: 'React Native',
+              img: <FaReact />,
+              text: 'Learned React Native to make mobile apps for iOS and Android.',
+            },
+            {
+              id: 7,
               title: 'Layout',
               img: <SiW3C style={{ marginTop: '-14px' }} />,
               text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
             },
             {
-              id: 6,
+              id: 8,
               title: 'GIT',
               img: <FaGit style={{ marginTop: '-13px' }} />,
               text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
             },
             {
-              id: 7,
+              id: 9,
               title: 'Taskrunners',
               img: <DiGulp />,
               text: 'During the development of web-pages learned to use Gulp taskrunner to optimize the process of development.',
             },
             {
-              id: 8,
+              id: 10,
               title: 'BEM',
               img: <IoMdConstruct />,
               text: 'Learned BEM methodology to name classess of HTML-elements.',
@@ -437,19 +449,19 @@ const initialState = {
       nav: [
         {
           title: 'Обо мне',
-          to: '/',
+          to: '/react-portfolio',
         },
         {
           title: 'Резюме',
-          to: '/resume',
+          to: '/react-portfolio/resume',
         },
         {
           title: 'Портфолио',
-          to: '/portfolio',
+          to: '/react-portfolio/portfolio',
         },
         {
           title: 'Контакты',
-          to: '/contact',
+          to: '/react-portfolio/contact',
         },
       ],
     },
@@ -488,30 +500,42 @@ const initialState = {
             },
             {
               id: 4,
+              title: 'TypeScript',
+              img: <SiTypescript />,
+              text: 'Изучил TypeScript для предотвращения ошибок во время разработки и для строгой типизации моего кода.',
+            },
+            {
+              id: 5,
               title: 'ReactJS + Redux',
               img: <FaReact />,
               text: 'Изучил JavaScript библиотеку ReactJs для создания динамических веб-приложений. Для управления состоянием использовал Redux, а также все сопутствующие ему библиотеки: react-redux, redux-thunk. Есть опыт работы с react-router-dom',
             },
             {
-              id: 5,
+              id: 6,
+              title: 'React Native',
+              img: <FaReact />,
+              text: 'Изучил React Native для создания мобильных приложений под iOS и Android.',
+            },
+            {
+              id: 7,
               title: 'Верстка',
               img: <SiW3C />,
               text: 'Научился делать адаптивные макеты под любые разрешения экрана. Подстраиваюсь под принципы W3C-валидатора.',
             },
             {
-              id: 6,
+              id: 8,
               title: 'GIT',
               img: <FaGit />,
               text: 'Изучил систему контроля версий Git. В работе использовал GitHub в качестве удаленного хранилища. Научился пуллить, пушить, создавать ветки, откатываться к предыдущим коммитам и тд.',
             },
             {
-              id: 7,
+              id: 9,
               title: 'Сборщики',
               img: <DiGulp />,
               text: 'При разработке статичных веб-страниц научился применять сборщик Gulp для оптимизации процесса разработки',
             },
             {
-              id: 8,
+              id: 10,
               title: 'БЭМ',
               img: <IoMdConstruct />,
               text: 'Научился использовать методолгию БЭМ для наименования классов элементов.',
@@ -607,7 +631,7 @@ const initialState = {
         },
       },
       portfolio: {
-        title: 'Portfolio',
+        title: 'Портфолио',
         items: [
           {
             id: 1,
@@ -901,7 +925,5 @@ export const filterPortfolioItemsSuccess = (filterWord) => ({
 export const setFilteredPortfolioItemsSuccess = () => ({
   type: SET_FILTERED_PORTFOLIO_ITEMS,
 });
-
-// export const
 
 export default appReducer;
