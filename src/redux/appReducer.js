@@ -11,6 +11,7 @@ import { RiEnglishInput } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
 
 import todoPic from '../assets/images/Main/Portfolio/react-todo-list.png';
+import todoPic2 from '../assets/images/Main/Portfolio/react-todo-list-2.png';
 import countriesPic from '../assets/images/Main/Portfolio/react-rest-countries.png';
 import weatherPic from '../assets/images/Main/Portfolio/weather.png';
 import socialNetworkPic from '../assets/images/Main/Portfolio/react-social-network.png';
@@ -241,6 +242,18 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'React Todo List 2',
+            imgSrc: todoPic2,
+            descr:
+              'Upgraded React Todo List application to train CRUD operations. Used Redux for state management. LocalStorage API.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/react-todo-list-2/',
+            github: 'https://github.com/Lonerr7/react-todo-list-2',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -252,7 +265,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -264,7 +277,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -276,7 +289,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -288,7 +301,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -300,7 +313,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -327,6 +340,18 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'React Todo List 2',
+            imgSrc: todoPic2,
+            descr:
+              'Upgraded React Todo List application to train CRUD operations. Used Redux for state management. LocalStorage API.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/react-todo-list-2/',
+            github: 'https://github.com/Lonerr7/react-todo-list-2',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -338,7 +363,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -350,7 +375,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -362,7 +387,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -374,7 +399,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -386,7 +411,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -647,6 +672,18 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'React Todo List 2',
+            imgSrc: todoPic2,
+            descr:
+              'Улучшенное React приложение по выводу списка дел для тренирвки CRUD навыков. Использовал Redux для контроля состояния и локальное хранилище браузера.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/react-todo-list-2/',
+            github: 'https://github.com/Lonerr7/react-todo-list-2',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 3,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -658,7 +695,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -670,7 +707,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -682,7 +719,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -694,7 +731,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -706,7 +743,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -733,6 +770,18 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'React Todo List 2',
+            imgSrc: todoPic2,
+            descr:
+              'Улучшенное React приложение по выводу списка дел для тренирвки CRUD навыков. Использовал Redux для контроля состояния и локальное хранилище браузера.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/react-todo-list-2/',
+            github: 'https://github.com/Lonerr7/react-todo-list-2',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 3,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -744,7 +793,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -756,7 +805,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -768,7 +817,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -780,7 +829,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -792,7 +841,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
