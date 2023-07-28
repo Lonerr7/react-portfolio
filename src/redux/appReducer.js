@@ -5,10 +5,17 @@ import {
   IoMdConstruct,
   IoIosPhonePortrait,
 } from 'react-icons/io';
-import { SiW3C, SiUdemy, SiTypescript } from 'react-icons/si';
+import {
+  SiW3C,
+  SiUdemy,
+  SiTypescript,
+  SiExpress,
+  SiMongodb,
+} from 'react-icons/si';
 import { FaGit, FaReact, FaTelegramPlane } from 'react-icons/fa';
 import { RiEnglishInput } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
+import { GrGraphQl } from 'react-icons/gr';
 
 import todoPic from '../assets/images/Main/Portfolio/react-todo-list.png';
 import todoPic2 from '../assets/images/Main/Portfolio/react-todo-list-2.png';
@@ -59,7 +66,7 @@ const initialState = {
           job: 'Frontend-developer',
           name: 'Ivan Karabankov',
           aboutMeDescr:
-            "Junior web-developer from Mogilev, Belarus. I develop both static web-pages and dynamic web-applications. Teachable. I take my job seriously and don't like to stand still, so I always learn something new.",
+            "Junior web-developer from Mogilev, Republic of Belarus. I develop both static web-pages and dynamic web-applications. Teachable. I take my job seriously and don't like to stand still, so I always learn something new.",
           buttons: {
             download: 'Download CV',
             contact: 'Contact',
@@ -106,24 +113,42 @@ const initialState = {
             },
             {
               id: 7,
+              title: 'GraphQL',
+              img: <GrGraphQl />,
+              text: 'Gained basic knowledge about GraphQL. Learned what queries and mutations in GraphQL are and how to use them. Used Apollo Client for development of client interfaces using GraphQL.',
+            },
+            {
+              id: 8,
+              title: 'Express',
+              img: <SiExpress style={{ marginTop: '-13px' }} />,
+              text: 'Learned the basics of Express. Wrote my own REST-API service for a social network using Express.',
+            },
+            {
+              id: 9,
+              title: 'MongoDB + Mongoose',
+              img: <SiMongodb />,
+              text: 'Learned the basics of MongoDB and Mongoose. Used MongoDB as a database for my social network and Mongoose as a connection between my server and the database.',
+            },
+            {
+              id: 10,
               title: 'Layout',
               img: <SiW3C style={{ marginTop: '-14px' }} />,
               text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
             },
             {
-              id: 8,
+              id: 11,
               title: 'GIT',
               img: <FaGit style={{ marginTop: '-13px' }} />,
               text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
             },
             {
-              id: 9,
+              id: 12,
               title: 'Taskrunners',
               img: <DiGulp />,
               text: 'During the development of web-pages learned to use Gulp taskrunner to optimize the process of development.',
             },
             {
-              id: 10,
+              id: 13,
               title: 'BEM',
               img: <IoMdConstruct />,
               text: 'Learned BEM methodology to name classess of HTML-elements.',
@@ -145,7 +170,7 @@ const initialState = {
             },
             {
               id: 2,
-              year: '2021-2022',
+              year: '2021-2024',
               place: 'Internet',
               specialization: 'Frontend Development',
               description:
@@ -159,18 +184,10 @@ const initialState = {
             {
               id: 1,
               year: '2022-2024',
-              place: 'Work place',
-              specialization: 'Logistics expert',
+              place: 'JSC "MOGOTEX"',
+              specialization: 'Economist of the department of material support',
               description:
-                'During this period of time I worked as logistics expert.',
-            },
-            {
-              id: 2,
-              year: '2022-2024',
-              place: 'Work place',
-              specialization: 'Logistics expert',
-              description:
-                'During this period of time I worked as logistics expert.',
+                'During this period of time I worked as economist-manager.',
             },
           ],
         },
@@ -496,7 +513,7 @@ const initialState = {
           job: 'Фронтенд разработчик',
           name: 'Иван Карабаньков',
           aboutMeDescr:
-            'Начинающий веб разработчик из Могилева, Беларусь. Занимаюсь разработкой как статичных веб-сайтов, так и динамичных веб-приложений. Ответственно подхожу к работе. Обучаем. Не люблю стоять на месте и всегда изучаю что-то новое.',
+            'Начинающий веб разработчик из Могилева, Республика Беларусь. Занимаюсь разработкой как статичных веб-сайтов, так и динамичных веб-приложений. Ответственно подхожу к работе. Обучаем. Не люблю стоять на месте и всегда изучаю что-то новое.',
           buttons: {
             download: 'Скачать резюме',
             contact: 'Мои контакты',
@@ -543,24 +560,42 @@ const initialState = {
             },
             {
               id: 7,
+              title: 'GraphQL',
+              img: <GrGraphQl />,
+              text: 'Получил базовые знания GraphQL. Изучил, что такое запросы (queries) и мутации (mutations) в GraphQL, а также как ими пользоваться. Использовал Apollo Client для разработки клиентских интерфейсов с применением GraphQL.',
+            },
+            {
+              id: 8,
+              title: 'Express',
+              img: <SiExpress style={{ marginTop: '-13px' }} />,
+              text: 'Изучил основы Express. Написал свой REST-API сервис для социальной сети с использованием Express.',
+            },
+            {
+              id: 9,
+              title: 'MongoDB + Mongoose',
+              img: <SiMongodb />,
+              text: 'Изучил основы MongoDB и Mongoose. Использовал MongoDB в качестве базы данных для своей социальной сети и Mongoose в качестве соединения между моим сервером и базой данных',
+            },
+            {
+              id: 10,
               title: 'Верстка',
               img: <SiW3C />,
               text: 'Научился делать адаптивные макеты под любые разрешения экрана. Подстраиваюсь под принципы W3C-валидатора.',
             },
             {
-              id: 8,
+              id: 11,
               title: 'GIT',
               img: <FaGit />,
               text: 'Изучил систему контроля версий Git. В работе использовал GitHub в качестве удаленного хранилища. Научился пуллить, пушить, создавать ветки, откатываться к предыдущим коммитам и тд.',
             },
             {
-              id: 9,
+              id: 12,
               title: 'Сборщики',
               img: <DiGulp />,
               text: 'При разработке статичных веб-страниц научился применять сборщик Gulp для оптимизации процесса разработки',
             },
             {
-              id: 10,
+              id: 13,
               title: 'БЭМ',
               img: <IoMdConstruct />,
               text: 'Научился использовать методолгию БЭМ для наименования классов элементов.',
@@ -582,7 +617,7 @@ const initialState = {
             },
             {
               id: 2,
-              year: '2021-2022',
+              year: '2021-2024',
               place: 'Интернет',
               specialization: 'Фронтенд разработчик',
               description:
@@ -596,10 +631,10 @@ const initialState = {
             {
               id: 1,
               year: '2022-2024',
-              place: 'Будущее место работы',
-              specialization: 'Специалист по логистике',
+              place: 'ОАО "МОГОТЕКС"',
+              specialization: 'Экономист отдела материального обеспечения',
               description:
-                'В этот период времени я работал по своей специальности.',
+                'В этот временной период я работал в качестве экономиста-менеджера.',
             },
           ],
         },
