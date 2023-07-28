@@ -1,36 +1,38 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.395668ce.css",
-    "main.js": "/react-portfolio/static/js/main.4fc6006b.js",
+    "main.js": "/react-portfolio/static/js/main.1e040642.js",
     "static/css/4.cd059846.chunk.css": "/react-portfolio/static/css/4.cd059846.chunk.css",
     "static/js/4.45dc43a8.chunk.js": "/react-portfolio/static/js/4.45dc43a8.chunk.js",
     "static/css/410.9accde2d.chunk.css": "/react-portfolio/static/css/410.9accde2d.chunk.css",
-    "static/js/410.e35035cd.chunk.js": "/react-portfolio/static/js/410.e35035cd.chunk.js",
+    "static/js/410.b7b8fbb3.chunk.js": "/react-portfolio/static/js/410.b7b8fbb3.chunk.js",
     "static/css/182.4fa76dcc.chunk.css": "/react-portfolio/static/css/182.4fa76dcc.chunk.css",
     "static/js/182.777becee.chunk.js": "/react-portfolio/static/js/182.777becee.chunk.js",
     "static/js/392.29e0d8b1.chunk.js": "/react-portfolio/static/js/392.29e0d8b1.chunk.js",
     "static/media/computer-courses.png": "/react-portfolio/static/media/computer-courses.2a82896396713ce7f569.png",
     "static/media/we-fix-it-all.png": "/react-portfolio/static/media/we-fix-it-all.f528abdee1d3293892c9.png",
+    "static/media/pigGame.png": "/react-portfolio/static/media/pigGame.9928c1d4970dedaaa6ec.png",
     "static/media/avatar.jpg": "/react-portfolio/static/media/avatar.448182f4e871ad6afa04.jpg",
     "static/media/sass-landing.png": "/react-portfolio/static/media/sass-landing.6e41f7cc40150162e490.png",
     "static/media/weather.png": "/react-portfolio/static/media/weather.070afd7d2f1c74185400.png",
     "static/media/react-rest-countries.png": "/react-portfolio/static/media/react-rest-countries.0f9437f35988ce05ff70.png",
     "static/media/preloader.gif": "/react-portfolio/static/media/preloader.757857ce13a4e4e598e4.gif",
     "static/media/react-social-network.png": "/react-portfolio/static/media/react-social-network.e78649d7ef2fe279e371.png",
+    "static/media/gql_project_mgmt.png": "/react-portfolio/static/media/gql_project_mgmt.0201ad68ec20503d5caa.png",
     "static/media/react-todo-list-2.png": "/react-portfolio/static/media/react-todo-list-2.79f62da8a8d702af8e9f.png",
     "index.html": "/react-portfolio/index.html",
     "main.395668ce.css.map": "/react-portfolio/static/css/main.395668ce.css.map",
-    "main.4fc6006b.js.map": "/react-portfolio/static/js/main.4fc6006b.js.map",
+    "main.1e040642.js.map": "/react-portfolio/static/js/main.1e040642.js.map",
     "4.cd059846.chunk.css.map": "/react-portfolio/static/css/4.cd059846.chunk.css.map",
     "4.45dc43a8.chunk.js.map": "/react-portfolio/static/js/4.45dc43a8.chunk.js.map",
     "410.9accde2d.chunk.css.map": "/react-portfolio/static/css/410.9accde2d.chunk.css.map",
-    "410.e35035cd.chunk.js.map": "/react-portfolio/static/js/410.e35035cd.chunk.js.map",
+    "410.b7b8fbb3.chunk.js.map": "/react-portfolio/static/js/410.b7b8fbb3.chunk.js.map",
     "182.4fa76dcc.chunk.css.map": "/react-portfolio/static/css/182.4fa76dcc.chunk.css.map",
     "182.777becee.chunk.js.map": "/react-portfolio/static/js/182.777becee.chunk.js.map",
     "392.29e0d8b1.chunk.js.map": "/react-portfolio/static/js/392.29e0d8b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.395668ce.css",
-    "static/js/main.4fc6006b.js"
+    "static/js/main.1e040642.js"
   ]
 }
