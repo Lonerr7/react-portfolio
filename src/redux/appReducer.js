@@ -25,6 +25,8 @@ import socialNetworkPic from '../assets/images/Main/Portfolio/react-social-netwo
 import coursesPic from '../assets/images/Main/Portfolio/computer-courses.png';
 import sassLandingPic from '../assets/images/Main/Portfolio/sass-landing.png';
 import weFixItAllPic from '../assets/images/Main/Portfolio/we-fix-it-all.png';
+import gqlProjectMgmtPic from '../assets/images/Main/Portfolio/gql_project_mgmt.png';
+import pigGamePic from '../assets/images/Main/Portfolio/pigGame.png';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -247,6 +249,31 @@ const initialState = {
         items: [
           {
             id: 1,
+            title: 'GraphQL Project Management App',
+            imgSrc: gqlProjectMgmtPic,
+            descr:
+              'Simple React application to gain GraphQL knowledge. Used Apollo Client to run GraphQL with ReactJS. Used Express/MongoDB/Mongoose as a server and a database.',
+            technologies: 'ReactJs/GraphQL/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/gql-project-management-app-frontend',
+            github:
+              'https://github.com/Lonerr7/gql-project-management-app-frontend',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 2,
+            title: 'React Pig Game',
+            imgSrc: pigGamePic,
+            descr:
+              'Simple React application to practise CRUD operations. Used Redux Toolkit for state management.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Pig-Game/',
+            github: 'https://github.com/Lonerr7/React-Pig-Game',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -258,7 +285,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 2,
+            id: 4,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -270,7 +297,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 5,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -282,7 +309,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 6,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -294,7 +321,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 7,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -306,7 +333,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 8,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -318,7 +345,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 9,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -330,7 +357,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 10,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -345,6 +372,31 @@ const initialState = {
         currentItems: [
           {
             id: 1,
+            title: 'GraphQL Project Management App',
+            imgSrc: gqlProjectMgmtPic,
+            descr:
+              'Simple React application to gain GraphQL knowledge. Used Apollo Client to run GraphQL with ReactJS. Used Express/MongoDB/Mongoose as a server and a database.',
+            technologies: 'ReactJs/GraphQL/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/gql-project-management-app-frontend',
+            github:
+              'https://github.com/Lonerr7/gql-project-management-app-frontend',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 2,
+            title: 'React Pig Game',
+            imgSrc: pigGamePic,
+            descr:
+              'Simple React application to practise CRUD operations. Used Redux Toolkit for state management.',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Pig-Game/',
+            github: 'https://github.com/Lonerr7/React-Pig-Game',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -356,7 +408,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 2,
+            id: 4,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -368,7 +420,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 5,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -380,7 +432,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 6,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -392,7 +444,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 7,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -404,7 +456,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 8,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -416,7 +468,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 9,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -428,7 +480,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 10,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -695,6 +747,31 @@ const initialState = {
         items: [
           {
             id: 1,
+            title: 'GraphQL Project Management App',
+            imgSrc: gqlProjectMgmtPic,
+            descr:
+              'Простое React приложения для отработки знаний по GraphQL. Использовал Apollo Client для соединения GraphQL и ReactJS. Использовал Express/MongoDB/Mongoose в качестве сервера и базы данных',
+            technologies: 'ReactJs/GraphQL/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/gql-project-management-app-frontend',
+            github:
+              'https://github.com/Lonerr7/gql-project-management-app-frontend',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 2,
+            title: 'React Pig Game',
+            imgSrc: pigGamePic,
+            descr:
+              'Простое React приложение для отработки CRUD операций. Использовал Redux Toolkit в качестве state менеджера',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Pig-Game/',
+            github: 'https://github.com/Lonerr7/React-Pig-Game',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -706,7 +783,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: 4,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -718,7 +795,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 5,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -730,7 +807,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 6,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -742,7 +819,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 7,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -754,7 +831,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 8,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -766,7 +843,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 9,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -778,7 +855,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 10,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -793,6 +870,31 @@ const initialState = {
         currentItems: [
           {
             id: 1,
+            title: 'GraphQL Project Management App',
+            imgSrc: gqlProjectMgmtPic,
+            descr:
+              'Простое React приложения для отработки знаний по GraphQL. Использовал Apollo Client для соединения GraphQL и ReactJS. Использовал Express/MongoDB/Mongoose в качестве сервера и базы данных',
+            technologies: 'ReactJs/GraphQL/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/gql-project-management-app-frontend',
+            github:
+              'https://github.com/Lonerr7/gql-project-management-app-frontend',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 2,
+            title: 'React Pig Game',
+            imgSrc: pigGamePic,
+            descr:
+              'Простое React приложение для отработки CRUD операций. Использовал Redux Toolkit в качестве state менеджера',
+            technologies: 'ReactJs',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/React-Pig-Game/',
+            github: 'https://github.com/Lonerr7/React-Pig-Game',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -804,7 +906,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: 4,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -816,7 +918,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 5,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -828,7 +930,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 6,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -840,7 +942,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 7,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -852,7 +954,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 8,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -864,7 +966,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 9,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -876,7 +978,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 9,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
