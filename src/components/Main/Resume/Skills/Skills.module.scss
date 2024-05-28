@@ -1,0 +1,15 @@
+.skills {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 618px) {
+  .skills {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

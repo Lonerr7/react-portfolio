@@ -1,0 +1,11 @@
+.menu {
+  position: relative;
+  width: 520px;
+  padding-left: 20px;
+}
+
+@media (max-width: 880px) {
+  .menu {
+    width: auto;
+  }
+}

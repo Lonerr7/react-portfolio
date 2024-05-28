@@ -1,0 +1,21 @@
+.contact {
+  &__inner {
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    &__inner {
+      padding-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    &__inner {
+      padding-top: 32px;
+    }
+  }
+}

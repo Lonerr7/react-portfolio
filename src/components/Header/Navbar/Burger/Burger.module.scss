@@ -1,0 +1,21 @@
+.burger {
+  position: absolute;
+  top: -7px;
+  right: 1px;
+  display: none;
+  z-index: 501;
+
+  div {
+    width: 20px;
+    height: 3px;
+    background-color: var(--h-color);
+    opacity: .7;
+    margin-bottom: 3px; 
+  }
+}
+
+@media (max-width: 880px) {
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../vars.scss';
+
+.header {
+  padding: 40px 0;
+  flex: 0 0 auto;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    padding: 12px 0;
+    box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.08);
+  }
+}

@@ -1,0 +1,61 @@
+.certificate {
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--certificate-imgBox);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+  }
+
+  &__logoBox {
+    min-width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--certificate-imgBox);
+
+    svg {
+      width: 50px;
+      height: 50px;
+      color: var(--text-color);
+    }
+  }
+
+  &__textBox {
+    padding: 20px 25px;
+  }
+
+  &__title {
+    color: var(--h-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  &__descr {
+    color: var(--descr-color);
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    color: var(--descr-color);
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 395px) {
+  .certificate {
+    flex-direction: column;
+
+    &__logoBox {
+      width: 100%;
+      height: 80px; 
+    }
+  }
+}

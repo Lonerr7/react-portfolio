@@ -1,0 +1,15 @@
+@import '../../../../../vars.scss';
+
+.resumeItems {
+  &__title {
+    @extend %heading;
+
+    &::before {
+      @extend %heading-big-line;
+    }
+
+    &::after {
+      @extend %heading-small-line;
+    }
+  }
+}

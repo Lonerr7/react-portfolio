@@ -1,0 +1,36 @@
+$container: 1310px;
+$header-container: 1845px;
+
+$skill-value: #888888;
+
+%heading {
+  color: var(--h-color);
+  font-weight: 600;
+  font-size: 21px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+}
+
+%heading-big-line {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--h-line);
+}
+
+%heading-small-line {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--border-color);
+}

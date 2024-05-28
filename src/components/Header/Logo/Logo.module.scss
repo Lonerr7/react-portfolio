@@ -1,0 +1,65 @@
+.logoBox {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__symbol {
+    width: 44px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    margin-right: 8px;
+    background-color: var(--border-color);
+  }
+
+  &__text {
+    color: var(--logo-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    letter-spacing: var(--spacing-logo);
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.themeSwitcher,
+.themeSwitcherDark {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.themeSwitcherDark {
+  color: #fff;
+}
+
+.languageSwitcher {
+  margin-left: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  color: var(--logo-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

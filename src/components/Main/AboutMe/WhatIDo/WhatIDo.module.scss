@@ -1,0 +1,38 @@
+@import '../../../../vars.scss';
+
+.whatIDo {
+  &__title {
+    @extend %heading;
+
+    &::before {
+      @extend %heading-big-line;
+    }
+
+    &::after {
+      @extend %heading-small-line;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .whatIDo {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .whatIDo {
+    
+    &__items {
+      gap: 30px;
+    }
+  }
+}

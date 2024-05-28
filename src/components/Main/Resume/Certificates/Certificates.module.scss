@@ -1,0 +1,38 @@
+@import '../../../../vars.scss';
+
+.certificates {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  &__title {
+    @extend %heading;
+
+    &::before {
+      @extend %heading-big-line;
+    }
+
+    &::after {
+      @extend %heading-small-line;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .certificates {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 618px) {
+  .certificates {
+    padding-bottom: 30px;
+  }
+}

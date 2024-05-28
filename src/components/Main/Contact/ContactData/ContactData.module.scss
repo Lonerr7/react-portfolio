@@ -1,0 +1,11 @@
+.contactData {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .contactData {
+    flex-direction: column;
+  }
+}

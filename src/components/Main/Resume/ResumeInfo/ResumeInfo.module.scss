@@ -1,0 +1,24 @@
+.resumeInfo {
+  padding-top: 65px;
+  padding-bottom: 30px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 618px) {
+  .resumeInfo {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .resumeInfo {
+    padding-top: 32px;
+  }
+}

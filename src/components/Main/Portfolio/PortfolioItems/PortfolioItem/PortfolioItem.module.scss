@@ -1,0 +1,55 @@
+.portfolioItem {
+  &__link {
+    display: block;
+
+    &:hover {
+      text-decoration-color: var(--h-color);
+    }
+  }
+
+  &__imgBox {
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid var(--h-color);
+  }
+
+  &__img {
+    width: 100%;
+    height: 266px;
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__title {
+    color: var(--h-color);
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    line-height: 18px;
+    color: var(--text-color);
+    margin-bottom: 7px;
+  }
+
+  &__githubLink {
+    color: var(--h-color);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolioItem {
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}

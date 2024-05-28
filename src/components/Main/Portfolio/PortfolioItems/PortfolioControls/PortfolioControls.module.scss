@@ -1,0 +1,31 @@
+.portfolioControls {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 30px;
+    color: var(--portfolio-filter);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.active {
+  opacity: 1;
+}
