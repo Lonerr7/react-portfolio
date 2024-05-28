@@ -21,6 +21,7 @@ import sassLandingPic from '../assets/images/Main/Portfolio/sass-landing.png';
 import weFixItAllPic from '../assets/images/Main/Portfolio/we-fix-it-all.png';
 import gqlProjectMgmtPic from '../assets/images/Main/Portfolio/gql_project_mgmt.png';
 import pigGamePic from '../assets/images/Main/Portfolio/pigGame.png';
+import metaBlog from '../assets/images/Main/Portfolio/meta-blog.png';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -248,6 +249,18 @@ const initialState = {
         items: [
           {
             id: 1,
+            title: 'Meta Blog',
+            imgSrc: metaBlog,
+            descr:
+              'Web application I have built to gain basic knowledge of Next.js. Used MongoDB as a database.',
+            technologies: 'NextJs/MongoDB/Mongoose/Typescript/',
+            filterProp: 'nextjs',
+            to: 'https://my-nextjs-blog-app-nu.vercel.app/',
+            github: 'https://github.com/Lonerr7/my_nextjs_blog_app',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 2,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -259,8 +272,9 @@ const initialState = {
               'https://github.com/Lonerr7/gql-project-management-app-frontend',
             githubDescr: 'Watch code',
           },
+
           {
-            id: 2,
+            id: 3,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -272,7 +286,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -284,7 +298,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -296,7 +310,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -308,7 +322,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -320,7 +334,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -332,7 +346,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 9,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -344,7 +358,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: 10,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -356,7 +370,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: 11,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -371,6 +385,18 @@ const initialState = {
         currentItems: [
           {
             id: 1,
+            title: 'Meta Blog',
+            imgSrc: metaBlog,
+            descr:
+              'Web application I have built to gain basic knowledge of Next.js. Used MongoDB as a database.',
+            technologies: 'NextJs/MongoDB/Mongoose/Typescript/',
+            filterProp: 'nextjs',
+            to: 'https://my-nextjs-blog-app-nu.vercel.app/',
+            github: 'https://github.com/Lonerr7/my_nextjs_blog_app',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 2,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -383,7 +409,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 2,
+            id: 3,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -395,7 +421,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -407,7 +433,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -419,7 +445,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -431,7 +457,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -443,7 +469,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -455,7 +481,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 9,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -467,7 +493,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: 10,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -479,7 +505,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: 11,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -751,6 +777,18 @@ const initialState = {
         items: [
           {
             id: 1,
+            title: 'Meta Blog',
+            imgSrc: metaBlog,
+            descr:
+              'Веб приложение, которое я создал для получение базовых навыков о Next.js. Использовал MongoDB в качестве базы данных.',
+            technologies: 'NextJs/MongoDB/Mongoose/Typescript/',
+            filterProp: 'nextjs',
+            to: 'https://my-nextjs-blog-app-nu.vercel.app/',
+            github: 'https://github.com/Lonerr7/my_nextjs_blog_app',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 2,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -763,7 +801,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: 3,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -775,7 +813,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -787,7 +825,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -799,7 +837,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -811,7 +849,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -823,7 +861,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -835,7 +873,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 9,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -847,7 +885,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: 10,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -859,7 +897,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 10,
+            id: 11,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -874,6 +912,18 @@ const initialState = {
         currentItems: [
           {
             id: 1,
+            title: 'Meta Blog',
+            imgSrc: metaBlog,
+            descr:
+              'Веб приложение, которое я создал для получение базовых навыков о Next.js. Использовал MongoDB в качестве базы данных.',
+            technologies: 'NextJs/MongoDB/Mongoose/Typescript/',
+            filterProp: 'nextjs',
+            to: 'https://my-nextjs-blog-app-nu.vercel.app/',
+            github: 'https://github.com/Lonerr7/my_nextjs_blog_app',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 2,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -886,7 +936,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: 3,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -895,10 +945,10 @@ const initialState = {
             filterProp: 'react',
             to: 'https://lonerr7.github.io/React-Pig-Game/',
             github: 'https://github.com/Lonerr7/React-Pig-Game',
-            githubDescr: 'Watch code',
+            githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -910,7 +960,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -922,7 +972,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -934,7 +984,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -946,7 +996,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -958,7 +1008,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 9,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -970,7 +1020,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: 10,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -982,7 +1032,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: 11,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:

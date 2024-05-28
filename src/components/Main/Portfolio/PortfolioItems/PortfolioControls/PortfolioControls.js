@@ -40,8 +40,21 @@ const PortfolioControls = ({ filterPortfolioItemsHandler }) => {
               : s.portfolioControls__item
           }
           onClick={() => {
-            filterPortfolioItemsHandler('landing');
+            filterPortfolioItemsHandler('nextjs');
             setActive(3);
+          }}
+        >
+          Next.js
+        </li>
+        <li
+          className={
+            active === 4
+              ? `${s.portfolioControls__item} ${s.active}`
+              : s.portfolioControls__item
+          }
+          onClick={() => {
+            filterPortfolioItemsHandler('landing');
+            setActive(4);
           }}
         >
           HTML/CSS

@@ -15,7 +15,11 @@ const PortfolioControlsContainer = ({
     setFilteredPortfolioItems();
   };
 
-  return <PortfolioControls filterPortfolioItemsHandler={filterPortfolioItemsHandler} />;
+  return (
+    <PortfolioControls
+      filterPortfolioItemsHandler={filterPortfolioItemsHandler}
+    />
+  );
 };
 
 const dispatchToProps = {
