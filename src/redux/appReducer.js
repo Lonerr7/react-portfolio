@@ -1,19 +1,13 @@
 import { AiFillHtml5 } from 'react-icons/ai';
-import { DiSass, DiGulp } from 'react-icons/di';
+import { DiSass, DiGulp, DiW3C } from 'react-icons/di';
 import {
   IoLogoJavascript,
   IoMdConstruct,
   IoIosPhonePortrait,
 } from 'react-icons/io';
-import {
-  SiW3C,
-  SiUdemy,
-  SiTypescript,
-  SiExpress,
-  SiMongodb,
-} from 'react-icons/si';
+import { SiUdemy, SiTypescript, SiExpress, SiMongodb } from 'react-icons/si';
 import { FaGit, FaReact, FaTelegramPlane } from 'react-icons/fa';
-import { RiEnglishInput } from 'react-icons/ri';
+import { RiEnglishInput, RiNextjsFill } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
 import { GrGraphQl } from 'react-icons/gr';
 
@@ -115,42 +109,48 @@ const initialState = {
             },
             {
               id: 7,
+              title: 'Next.js',
+              img: <RiNextjsFill />,
+              text: 'Learned Next.js to build complex web applications. During the development used client and server side rendering as well as server actions.',
+            },
+            {
+              id: 8,
               title: 'GraphQL',
               img: <GrGraphQl />,
               text: 'Gained basic knowledge about GraphQL. Learned what queries and mutations in GraphQL are and how to use them. Used Apollo Client for development of client interfaces using GraphQL.',
             },
             {
-              id: 8,
+              id: 9,
               title: 'Express',
               img: <SiExpress style={{ marginTop: '-13px' }} />,
               text: 'Learned the basics of Express. Wrote my own REST-API service for a social network using Express.',
             },
             {
-              id: 9,
+              id: 10,
               title: 'MongoDB + Mongoose',
               img: <SiMongodb />,
               text: 'Learned the basics of MongoDB and Mongoose. Used MongoDB as a database for my social network and Mongoose as a connection between my server and the database.',
             },
             {
-              id: 10,
+              id: 11,
               title: 'Layout',
-              img: <SiW3C style={{ marginTop: '-14px' }} />,
+              img: <DiW3C style={{ marginTop: '-14px' }} />,
               text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
             },
             {
-              id: 11,
+              id: 12,
               title: 'GIT',
               img: <FaGit style={{ marginTop: '-13px' }} />,
               text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
             },
             {
-              id: 12,
+              id: 13,
               title: 'Taskrunners',
               img: <DiGulp />,
               text: 'During the development of web-pages learned to use Gulp taskrunner to optimize the process of development.',
             },
             {
-              id: 13,
+              id: 14,
               title: 'BEM',
               img: <IoMdConstruct />,
               text: 'Learned BEM methodology to name classess of HTML-elements.',
@@ -168,15 +168,14 @@ const initialState = {
               year: '2018-2022',
               place: 'Belarusian-Russian University',
               specialization: 'Transport Logistics',
-              description: 'This is my main specialty.',
             },
             {
               id: 2,
               year: '2021-2024',
-              place: 'Internet',
+              place: 'The Internet',
               specialization: 'Frontend Development',
               description:
-                'During this period of time I learned HTML, CSS(SCSS) and JavaScript, as well as Gulp, Git and React JS.',
+                'During this period of time I have learned HTML, CSS(SCSS), JavaScript(Typescript), ReactJs, NextJs, and many more.',
             },
           ],
         },
@@ -189,7 +188,7 @@ const initialState = {
               place: 'JSC "MOGOTEX"',
               specialization: 'Economist of the department of material support',
               description:
-                'During this period of time I worked as economist-manager.',
+                'During this period of time I worked as a manager of procurement.',
             },
           ],
         },
@@ -612,42 +611,48 @@ const initialState = {
             },
             {
               id: 7,
+              title: 'Next.js',
+              img: <RiNextjsFill />,
+              text: 'Изучил Next.js для постороения сложных веб приложений. Во время разработки использовал клиентский и серверный рендеринг, а также серверные экшены.',
+            },
+            {
+              id: 8,
               title: 'GraphQL',
               img: <GrGraphQl />,
               text: 'Получил базовые знания GraphQL. Изучил, что такое запросы (queries) и мутации (mutations) в GraphQL, а также как ими пользоваться. Использовал Apollo Client для разработки клиентских интерфейсов с применением GraphQL.',
             },
             {
-              id: 8,
+              id: 9,
               title: 'Express',
               img: <SiExpress style={{ marginTop: '-13px' }} />,
               text: 'Изучил основы Express. Написал свой REST-API сервис для социальной сети с использованием Express.',
             },
             {
-              id: 9,
+              id: 10,
               title: 'MongoDB + Mongoose',
               img: <SiMongodb />,
               text: 'Изучил основы MongoDB и Mongoose. Использовал MongoDB в качестве базы данных для своей социальной сети и Mongoose в качестве соединения между моим сервером и базой данных',
             },
             {
-              id: 10,
+              id: 11,
               title: 'Верстка',
-              img: <SiW3C />,
+              img: <DiW3C />,
               text: 'Научился делать адаптивные макеты под любые разрешения экрана. Подстраиваюсь под принципы W3C-валидатора.',
             },
             {
-              id: 11,
+              id: 12,
               title: 'GIT',
               img: <FaGit />,
               text: 'Изучил систему контроля версий Git. В работе использовал GitHub в качестве удаленного хранилища. Научился пуллить, пушить, создавать ветки, откатываться к предыдущим коммитам и тд.',
             },
             {
-              id: 12,
+              id: 13,
               title: 'Сборщики',
               img: <DiGulp />,
               text: 'При разработке статичных веб-страниц научился применять сборщик Gulp для оптимизации процесса разработки',
             },
             {
-              id: 13,
+              id: 14,
               title: 'БЭМ',
               img: <IoMdConstruct />,
               text: 'Научился использовать методолгию БЭМ для наименования классов элементов.',
@@ -665,7 +670,6 @@ const initialState = {
               year: '2018-2022',
               place: 'Белорусско-Российский Университет',
               specialization: 'Транспортная логистика',
-              description: 'Моя основная специальность.',
             },
             {
               id: 2,
@@ -673,7 +677,7 @@ const initialState = {
               place: 'Интернет',
               specialization: 'Фронтенд разработчик',
               description:
-                'В этот период времени я изучил HTML, CSS и JavaScript, а также Gulp, Git и React JS.',
+                'В этот период времени я изучил HTML, CSS(SCSS), JavaScript(Typescript), ReactJs, NextJs и много других технологий.',
             },
           ],
         },
@@ -686,7 +690,7 @@ const initialState = {
               place: 'ОАО "МОГОТЕКС"',
               specialization: 'Экономист отдела материального обеспечения',
               description:
-                'В этот временной период я работал в качестве экономиста-менеджера.',
+                'В этот период времени я работал менеджером по закупкам.',
             },
           ],
         },

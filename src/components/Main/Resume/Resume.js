@@ -3,7 +3,6 @@ import PageHeader from '../../common/PageHeader/PageHeader';
 import Certificates from './Certificates/Certificates';
 import s from './Resume.module.scss';
 import ResumeInfo from './ResumeInfo/ResumeInfo';
-import Skills from './Skills/Skills';
 
 const Resume = ({ resume }) => {
   return (
@@ -14,7 +13,6 @@ const Resume = ({ resume }) => {
         certificates={resume.certificates.items}
         title={resume.certificates.title}
       />
-      <Skills skills={resume.skills} />
     </div>
   );
 };
