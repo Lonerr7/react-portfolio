@@ -35,25 +35,25 @@ const initialState = {
   eng: {
     header: {
       logo: {
-        img: 'V',
-        name: 'Vanya Karabankov',
+        img: 'I',
+        name: 'Ivan Karabankov',
       },
       nav: [
         {
           title: 'About me',
-          to: '/react-portfolio',
+          to: '/',
         },
-        {
-          title: 'Resume',
-          to: '/react-portfolio/resume',
-        },
+        // {
+        //   title: 'Resume',
+        //   to: '/resume',
+        // },
         {
           title: 'Portfolio',
-          to: '/react-portfolio/portfolio',
+          to: '/portfolio',
         },
         {
           title: 'Contact',
-          to: '/react-portfolio/contact',
+          to: '/contact',
         },
       ],
     },
@@ -562,25 +562,25 @@ const initialState = {
   ru: {
     header: {
       logo: {
-        img: 'В',
-        name: 'Ваня Карабаньков',
+        img: 'И',
+        name: 'Иван Карабаньков',
       },
       nav: [
         {
           title: 'Обо мне',
-          to: '/react-portfolio',
+          to: '/',
         },
-        {
-          title: 'Резюме',
-          to: '/react-portfolio/resume',
-        },
+        // {
+        //   title: 'Резюме',
+        //   to: '/resume',
+        // },
         {
           title: 'Портфолио',
-          to: '/react-portfolio/portfolio',
+          to: '/portfolio',
         },
         {
           title: 'Контакты',
-          to: '/react-portfolio/contact',
+          to: '/contact',
         },
       ],
     },

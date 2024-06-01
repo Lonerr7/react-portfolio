@@ -6,7 +6,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import React, { Suspense } from 'react';
 
-const Resume = React.lazy(() => import('./components/Main/Resume/Resume'));
 const Portfolio = React.lazy(() =>
   import('./components/Main/Portfolio/Portfolio')
 );
@@ -20,13 +19,9 @@ const App = () => {
         <div className="main__inner">
           <Suspense fallback={<></>}>
             <Routes>
-              <Route path="/react-portfolio" element={<AboutMe />} />
-              <Route path="/react-portfolio/resume" element={<Resume />} />
-              <Route
-                path="/react-portfolio/portfolio"
-                element={<Portfolio />}
-              />
-              <Route path="/react-portfolio/contact" element={<Contact />} />
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
         </div>
