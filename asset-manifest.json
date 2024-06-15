@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.2d416114.css",
-    "main.js": "/react-portfolio/static/js/main.14cb1d35.js",
+    "main.js": "/react-portfolio/static/js/main.e27e164a.js",
     "static/css/929.1b4e11fc.chunk.css": "/react-portfolio/static/css/929.1b4e11fc.chunk.css",
     "static/js/929.1648e8c3.chunk.js": "/react-portfolio/static/js/929.1648e8c3.chunk.js",
     "static/css/683.4481d029.chunk.css": "/react-portfolio/static/css/683.4481d029.chunk.css",
@@ -11,6 +11,7 @@
     "static/media/we-fix-it-all.png": "/react-portfolio/static/media/we-fix-it-all.f528abdee1d3293892c9.png",
     "static/media/meta-blog.png": "/react-portfolio/static/media/meta-blog.6e2afff6e9bee359cee4.png",
     "static/media/pigGame.png": "/react-portfolio/static/media/pigGame.9928c1d4970dedaaa6ec.png",
+    "static/media/todo-social-network.png": "/react-portfolio/static/media/todo-social-network.fcf7e9dd718864851660.png",
     "static/media/avatar.jpg": "/react-portfolio/static/media/avatar.448182f4e871ad6afa04.jpg",
     "static/media/sass-landing.png": "/react-portfolio/static/media/sass-landing.6e41f7cc40150162e490.png",
     "static/media/weather.png": "/react-portfolio/static/media/weather.070afd7d2f1c74185400.png",
@@ -21,7 +22,7 @@
     "static/media/react-todo-list-2.png": "/react-portfolio/static/media/react-todo-list-2.79f62da8a8d702af8e9f.png",
     "index.html": "/react-portfolio/index.html",
     "main.2d416114.css.map": "/react-portfolio/static/css/main.2d416114.css.map",
-    "main.14cb1d35.js.map": "/react-portfolio/static/js/main.14cb1d35.js.map",
+    "main.e27e164a.js.map": "/react-portfolio/static/js/main.e27e164a.js.map",
     "929.1b4e11fc.chunk.css.map": "/react-portfolio/static/css/929.1b4e11fc.chunk.css.map",
     "929.1648e8c3.chunk.js.map": "/react-portfolio/static/js/929.1648e8c3.chunk.js.map",
     "683.4481d029.chunk.css.map": "/react-portfolio/static/css/683.4481d029.chunk.css.map",
@@ -30,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.2d416114.css",
-    "static/js/main.14cb1d35.js"
+    "static/js/main.e27e164a.js"
   ]
 }
