@@ -22,6 +22,7 @@ import weFixItAllPic from '../assets/images/Main/Portfolio/we-fix-it-all.png';
 import gqlProjectMgmtPic from '../assets/images/Main/Portfolio/gql_project_mgmt.png';
 import pigGamePic from '../assets/images/Main/Portfolio/pigGame.png';
 import metaBlog from '../assets/images/Main/Portfolio/meta-blog.png';
+import todoSocialNetwork from '../assets/images/Main/Portfolio/todo-social-network.png';
 
 const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -261,6 +262,19 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'Todo-Social-Network',
+            imgSrc: todoSocialNetwork,
+            descr:
+              'A social network with the ability to keep a todo list of your tasks, as well as communicate with other users through a shared chat.',
+            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
+            github:
+              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -272,9 +286,8 @@ const initialState = {
               'https://github.com/Lonerr7/gql-project-management-app-frontend',
             githubDescr: 'Watch code',
           },
-
           {
-            id: 3,
+            id: 4,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -286,7 +299,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -298,7 +311,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -310,7 +323,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -322,7 +335,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -334,7 +347,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 9,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -346,7 +359,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: 10,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -358,7 +371,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: 11,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -370,7 +383,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 11,
+            id: 12,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -397,6 +410,19 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'Todo-Social-Network',
+            imgSrc: todoSocialNetwork,
+            descr:
+              'A social network with the ability to keep a todo list of your tasks, as well as communicate with other users through a shared chat.',
+            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
+            github:
+              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            githubDescr: 'Watch code',
+          },
+          {
+            id: 3,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -409,7 +435,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -421,7 +447,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -433,7 +459,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -445,7 +471,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -457,7 +483,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -469,7 +495,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: 9,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -481,7 +507,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: 10,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -493,7 +519,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: 11,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -505,7 +531,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 11,
+            id: 12,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -789,6 +815,19 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'Todo-Social-Network',
+            imgSrc: todoSocialNetwork,
+            descr:
+              'Cоциальная сеть с возможностью вести todo-лист своих задач, а также общаться с другими пользователями через общий чат.',
+            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
+            github:
+              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 3,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -801,7 +840,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -813,7 +852,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -825,7 +864,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -837,7 +876,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -849,7 +888,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -861,7 +900,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 9,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -873,7 +912,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: 10,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -885,7 +924,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 10,
+            id: 11,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -897,7 +936,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 11,
+            id: 12,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -924,6 +963,19 @@ const initialState = {
           },
           {
             id: 2,
+            title: 'Todo-Social-Network',
+            imgSrc: todoSocialNetwork,
+            descr:
+              'Cоциальная сеть с возможностью вести todo-лист своих задач, а также общаться с другими пользователями через общий чат.',
+            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            filterProp: 'react',
+            to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
+            github:
+              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            githubDescr: 'Смотреть код',
+          },
+          {
+            id: 3,
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -936,7 +988,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: 4,
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -948,7 +1000,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: 5,
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -960,7 +1012,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: 6,
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -972,7 +1024,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: 7,
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -984,7 +1036,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: 8,
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -996,7 +1048,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: 9,
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -1008,7 +1060,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: 10,
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -1020,7 +1072,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 10,
+            id: 11,
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -1032,7 +1084,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 11,
+            id: 12,
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
