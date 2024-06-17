@@ -15,7 +15,7 @@ const Myself = ({ myself, currentLanguage }) => {
             {currentLanguage === 'eng' ? (
               <a
                 className={`${s.myself__link} ${s.myself__link_download}`}
-                href="https://drive.google.com/file/d/17PwoDTNhzWFa06DyRbVSYQNxywc3GUFR/view?usp=sharing"
+                href="https://drive.google.com/file/d/14qOvWwUl4K1mbalxt5J4pXfCei0SfeP2/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -24,7 +24,7 @@ const Myself = ({ myself, currentLanguage }) => {
             ) : (
               <a
                 className={`${s.myself__link} ${s.myself__link_download}`}
-                href="https://drive.google.com/file/d/1VkhvXZbDgVsK3C-laMqCLwUSX3n0f-XR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yfc0Qs6ChhJEiGEFaRVekyewedQwsVKD/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
