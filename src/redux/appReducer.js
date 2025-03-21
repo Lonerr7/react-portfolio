@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiSass, DiGulp, DiW3C } from 'react-icons/di';
 import {
@@ -5,8 +7,8 @@ import {
   IoMdConstruct,
   IoIosPhonePortrait,
 } from 'react-icons/io';
-import { SiUdemy, SiTypescript, SiExpress, SiMongodb } from 'react-icons/si';
-import { FaGit, FaReact, FaTelegramPlane } from 'react-icons/fa';
+import { SiUdemy, SiTypescript, SiExpress, SiMongodb, SiMariadb } from 'react-icons/si';
+import { FaGit, FaReact, FaTelegramPlane, FaPhp } from 'react-icons/fa';
 import { RiEnglishInput, RiNextjsFill } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
 import { GrGraphQl } from 'react-icons/gr';
@@ -74,85 +76,97 @@ const initialState = {
           title: 'What I Do',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               title: 'HTML',
               img: <AiFillHtml5 />,
               text: 'Learned hypertext markup language HTML. I always use semantic HTML.',
             },
             {
-              id: 2,
+              id: uuidv4(),
               title: 'CSS',
               img: <DiSass />,
               text: 'Learned style sheet language CSS. Learned how to use preprocessor SASS (SCSS).',
             },
             {
-              id: 3,
+              id: uuidv4(),
               title: 'JavaScript',
               img: <IoLogoJavascript />,
               text: 'Learned JavaScript to create interactive elemetns on the page and to send requests and recieve responses from servers.',
             },
             {
-              id: 4,
+              id: uuidv4(),
               title: 'TypeScript',
               img: <SiTypescript />,
               text: 'Learned TypeScript to prevent errors during development and to strictly type my code.',
             },
             {
-              id: 5,
+              id: uuidv4(),
               title: 'ReactJS + Redux',
               img: <FaReact />,
               text: 'Learned ReactJS to make dymanic single page web-applications. Used Redux for state management, as well as all related libraries: react-redux, redux-thunk. I also have experience with react-router-dom.',
             },
             {
-              id: 6,
+              id: uuidv4(),
               title: 'React Native',
               img: <FaReact />,
               text: 'Learned React Native to make mobile apps for iOS and Android.',
             },
             {
-              id: 7,
+              id: uuidv4(),
               title: 'Next.js',
               img: <RiNextjsFill />,
               text: 'Learned Next.js to build complex web applications. During the development used client and server side rendering as well as server actions.',
             },
             {
-              id: 8,
+              id: uuidv4(),
+              title: 'PHP',
+              img: <FaPhp />,
+              text: 'Basic knowledge and experience with PHP.',
+            },
+            {
+              id: uuidv4(),
               title: 'GraphQL',
               img: <GrGraphQl />,
               text: 'Gained basic knowledge about GraphQL. Learned what queries and mutations in GraphQL are and how to use them. Used Apollo Client for development of client interfaces using GraphQL.',
             },
             {
-              id: 9,
+              id: uuidv4(),
               title: 'Express',
               img: <SiExpress style={{ marginTop: '-13px' }} />,
               text: 'Learned the basics of Express. Wrote my own REST-API service for a social network using Express.',
             },
             {
-              id: 10,
+              id: uuidv4(),
               title: 'MongoDB + Mongoose',
               img: <SiMongodb />,
               text: 'Learned the basics of MongoDB and Mongoose. Used MongoDB as a database for my social network and Mongoose as a connection between my server and the database.',
             },
             {
-              id: 11,
+              id: uuidv4(),
+              title: 'MariaDB',
+              img: <SiMariadb />,
+              text: 'Basic knowledge of SQL. Used MariaDB as database.',
+            },
+            {
+              id: uuidv4(),
               title: 'Layout',
               img: <DiW3C style={{ marginTop: '-14px' }} />,
               text: 'Learned to make responsive web-pages for different screen resolutions. I always keep up with principles of W3C validation.',
             },
             {
-              id: 12,
+              id: uuidv4(),
               title: 'GIT',
               img: <FaGit style={{ marginTop: '-13px' }} />,
               text: 'Learned to use a version control system Git. During developement used GitHub as a remote storage. Learned to push, pull, create branches, reset commits, and more.',
             },
             {
-              id: 13,
+              id: uuidv4(),
               title: 'Taskrunners',
               img: <DiGulp />,
               text: 'During the development of web-pages learned to use Gulp taskrunner to optimize the process of development.',
             },
             {
-              id: 14,
+              id: uuidv4(),
               title: 'BEM',
               img: <IoMdConstruct />,
               text: 'Learned BEM methodology to name classess of HTML-elements.',
@@ -166,13 +180,13 @@ const initialState = {
           title: 'Education',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               year: '2018-2022',
               place: 'Belarusian-Russian University',
               specialization: 'Transport Logistics',
             },
             {
-              id: 2,
+              id: uuidv4(),
               year: '2021-2024',
               place: 'The Internet',
               specialization: 'Frontend Development',
@@ -185,7 +199,7 @@ const initialState = {
           title: 'Experience',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               year: '2022-2024',
               place: 'JSC "MOGOTEX"',
               specialization: 'Economist of the department of material support',
@@ -198,7 +212,7 @@ const initialState = {
           title: 'Certificates',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               title: 'FCE (B2 First)',
               descr:
                 'International English exam, accepted by thousands of businesses and educational institutions worldwide.',
@@ -207,7 +221,7 @@ const initialState = {
               to: 'https://drive.google.com/file/d/1NR1GC5mFtC5eVg5WhsylMwSV3eRHi0_Q/view',
             },
             {
-              id: 2,
+              id: uuidv4(),
               title:
                 'The Complete JavaScript Course 2022: From Zero to Expert!',
               descr: 'Udemy JavaScript course by Jonas Schmedtmann.',
@@ -222,22 +236,22 @@ const initialState = {
             title: 'Coding Skills',
             items: [
               {
-                id: 1,
+                id: uuidv4(),
                 title: 'HTML/CSS',
                 percent: 100,
               },
               {
-                id: 2,
+                id: uuidv4(),
                 title: 'JavaScript',
                 percent: 85,
               },
               {
-                id: 3,
+                id: uuidv4(),
                 title: 'ReactJS',
                 percent: 80,
               },
               {
-                id: 4,
+                id: uuidv4(),
                 title: 'GIT',
                 percent: 70,
               },
@@ -249,7 +263,7 @@ const initialState = {
         title: 'Portfolio',
         items: [
           {
-            id: 1,
+            id: uuidv4(),
             title: 'Meta Blog',
             imgSrc: metaBlog,
             descr:
@@ -261,20 +275,20 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 2,
+            id: uuidv4(),
             title: 'Todo-Social-Network',
             imgSrc: todoSocialNetwork,
             descr:
               'A social network with the ability to keep a todo list of your tasks, as well as communicate with other users through a shared chat.',
-            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            technologies:
+              'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
-            github:
-              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            github: 'https://github.com/Lonerr7/Todo-Social-Network-Client',
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: uuidv4(),
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -287,7 +301,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: uuidv4(),
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -299,7 +313,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: uuidv4(),
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -311,7 +325,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: uuidv4(),
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -323,7 +337,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: uuidv4(),
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -335,7 +349,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: uuidv4(),
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -347,7 +361,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: uuidv4(),
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -359,7 +373,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: uuidv4(),
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -371,7 +385,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 11,
+            id: uuidv4(),
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -383,7 +397,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 12,
+            id: uuidv4(),
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -397,7 +411,7 @@ const initialState = {
         ],
         currentItems: [
           {
-            id: 1,
+            id: uuidv4(),
             title: 'Meta Blog',
             imgSrc: metaBlog,
             descr:
@@ -409,20 +423,20 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 2,
+            id: uuidv4(),
             title: 'Todo-Social-Network',
             imgSrc: todoSocialNetwork,
             descr:
               'A social network with the ability to keep a todo list of your tasks, as well as communicate with other users through a shared chat.',
-            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            technologies:
+              'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
-            github:
-              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            github: 'https://github.com/Lonerr7/Todo-Social-Network-Client',
             githubDescr: 'Watch code',
           },
           {
-            id: 3,
+            id: uuidv4(),
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -435,7 +449,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 4,
+            id: uuidv4(),
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -447,7 +461,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: uuidv4(),
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -459,7 +473,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 6,
+            id: uuidv4(),
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -471,7 +485,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 7,
+            id: uuidv4(),
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -483,7 +497,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 8,
+            id: uuidv4(),
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -495,7 +509,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 9,
+            id: uuidv4(),
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -507,7 +521,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 10,
+            id: uuidv4(),
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -519,7 +533,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 11,
+            id: uuidv4(),
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -531,7 +545,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 12,
+            id: uuidv4(),
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -548,19 +562,19 @@ const initialState = {
         title: 'Contact',
         contactInfo: [
           {
-            id: 1,
+            id: uuidv4(),
             img: <IoIosPhonePortrait />,
             title: '+375-29-154-71-02',
             descr: 'My personal phone number',
           },
           {
-            id: 2,
+            id: uuidv4(),
             img: <FaTelegramPlane />,
             title: 'https://t.me/nice3guy',
             descr: 'My personal telegram profile',
           },
           {
-            id: 3,
+            id: uuidv4(),
             img: <BsEnvelope />,
             title: 'ivan.karabankov@gmail.com',
             descr: 'My personal e-mail address',
@@ -626,85 +640,97 @@ const initialState = {
           title: 'Что я умею',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               title: 'HTML',
               img: <AiFillHtml5 />,
               text: 'Изучил язык гипертекстовой разметки HTML. Применяю принципы семантики.',
             },
             {
-              id: 2,
+              id: uuidv4(),
               title: 'CSS',
               img: <DiSass />,
               text: 'Изучил язык стилей CSS. Научился использовать препроцессор SASS (SCSS).',
             },
             {
-              id: 3,
+              id: uuidv4(),
               title: 'JavaScript',
               img: <IoLogoJavascript />,
               text: 'Изучил язык JavaScript для создания интерактивности на сайте, а также для отправки запросов на сервер.',
             },
             {
-              id: 4,
+              id: uuidv4(),
               title: 'TypeScript',
               img: <SiTypescript />,
               text: 'Изучил TypeScript для предотвращения ошибок во время разработки и для строгой типизации моего кода.',
             },
             {
-              id: 5,
+              id: uuidv4(),
               title: 'ReactJS + Redux',
               img: <FaReact />,
               text: 'Изучил JavaScript библиотеку ReactJs для создания динамических веб-приложений. Для управления состоянием использовал Redux, а также все сопутствующие ему библиотеки: react-redux, redux-thunk. Есть опыт работы с react-router-dom',
             },
             {
-              id: 6,
+              id: uuidv4(),
               title: 'React Native',
               img: <FaReact />,
               text: 'Изучил React Native для создания мобильных приложений под iOS и Android.',
             },
             {
-              id: 7,
+              id: uuidv4(),
               title: 'Next.js',
               img: <RiNextjsFill />,
               text: 'Изучил Next.js для постороения сложных веб приложений. Во время разработки использовал клиентский и серверный рендеринг, а также серверные экшены.',
             },
             {
-              id: 8,
+              id: uuidv4(),
+              title: 'PHP',
+              img: <FaPhp />,
+              text: 'Базовые знания и опыт разработки на PHP.',
+            },
+            {
+              id: uuidv4(),
               title: 'GraphQL',
               img: <GrGraphQl />,
               text: 'Получил базовые знания GraphQL. Изучил, что такое запросы (queries) и мутации (mutations) в GraphQL, а также как ими пользоваться. Использовал Apollo Client для разработки клиентских интерфейсов с применением GraphQL.',
             },
             {
-              id: 9,
+              id: uuidv4(),
               title: 'Express',
               img: <SiExpress style={{ marginTop: '-13px' }} />,
               text: 'Изучил основы Express. Написал свой REST-API сервис для социальной сети с использованием Express.',
             },
             {
-              id: 10,
+              id: uuidv4(),
               title: 'MongoDB + Mongoose',
               img: <SiMongodb />,
               text: 'Изучил основы MongoDB и Mongoose. Использовал MongoDB в качестве базы данных для своей социальной сети и Mongoose в качестве соединения между моим сервером и базой данных',
             },
             {
-              id: 11,
+              id: uuidv4(),
+              title: 'MariaDB',
+              img: <SiMariadb />,
+              text: 'Базовые знания SQL. В качестве базы данных исопльзовал MariaDB.',
+            },
+            {
+              id: uuidv4(),
               title: 'Верстка',
               img: <DiW3C />,
               text: 'Научился делать адаптивные макеты под любые разрешения экрана. Подстраиваюсь под принципы W3C-валидатора.',
             },
             {
-              id: 12,
+              id: uuidv4(),
               title: 'GIT',
               img: <FaGit />,
               text: 'Изучил систему контроля версий Git. В работе использовал GitHub в качестве удаленного хранилища. Научился пуллить, пушить, создавать ветки, откатываться к предыдущим коммитам и тд.',
             },
             {
-              id: 13,
+              id: uuidv4(),
               title: 'Сборщики',
               img: <DiGulp />,
               text: 'При разработке статичных веб-страниц научился применять сборщик Gulp для оптимизации процесса разработки',
             },
             {
-              id: 14,
+              id: uuidv4(),
               title: 'БЭМ',
               img: <IoMdConstruct />,
               text: 'Научился использовать методолгию БЭМ для наименования классов элементов.',
@@ -718,13 +744,13 @@ const initialState = {
           title: 'Образование',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               year: '2018-2022',
               place: 'Белорусско-Российский Университет',
               specialization: 'Транспортная логистика',
             },
             {
-              id: 2,
+              id: uuidv4(),
               year: '2021-2024',
               place: 'Интернет',
               specialization: 'Фронтенд разработчик',
@@ -737,7 +763,7 @@ const initialState = {
           title: 'Опыт',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               year: '2022-2024',
               place: 'ОАО "МОГОТЕКС"',
               specialization: 'Экономист отдела материального обеспечения',
@@ -750,7 +776,7 @@ const initialState = {
           title: 'Сертификаты',
           items: [
             {
-              id: 1,
+              id: uuidv4(),
               title: 'FCE (B2 First)',
               descr:
                 'Международный экзамен Английского языка, результат которого принимается многими работодателями и учебными заведениями по всему миру.',
@@ -759,7 +785,7 @@ const initialState = {
               to: 'https://drive.google.com/file/d/1NR1GC5mFtC5eVg5WhsylMwSV3eRHi0_Q/view',
             },
             {
-              id: 2,
+              id: uuidv4(),
               title:
                 'The Complete JavaScript Course 2022: From Zero to Expert!',
               descr:
@@ -775,22 +801,22 @@ const initialState = {
             title: 'Навыки написания кода',
             items: [
               {
-                id: 1,
+                id: uuidv4(),
                 title: 'HTML/CSS',
                 percent: 100,
               },
               {
-                id: 2,
+                id: uuidv4(),
                 title: 'JavaScript',
                 percent: 85,
               },
               {
-                id: 3,
+                id: uuidv4(),
                 title: 'ReactJS',
                 percent: 80,
               },
               {
-                id: 4,
+                id: uuidv4(),
                 title: 'GIT',
                 percent: 70,
               },
@@ -802,7 +828,7 @@ const initialState = {
         title: 'Портфолио',
         items: [
           {
-            id: 1,
+            id: uuidv4(),
             title: 'Meta Blog',
             imgSrc: metaBlog,
             descr:
@@ -814,20 +840,20 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: uuidv4(),
             title: 'Todo-Social-Network',
             imgSrc: todoSocialNetwork,
             descr:
               'Cоциальная сеть с возможностью вести todo-лист своих задач, а также общаться с другими пользователями через общий чат.',
-            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            technologies:
+              'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
-            github:
-              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            github: 'https://github.com/Lonerr7/Todo-Social-Network-Client',
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: uuidv4(),
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -840,7 +866,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: uuidv4(),
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -852,7 +878,7 @@ const initialState = {
             githubDescr: 'Watch code',
           },
           {
-            id: 5,
+            id: uuidv4(),
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -864,7 +890,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: uuidv4(),
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -876,7 +902,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: uuidv4(),
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -888,7 +914,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: uuidv4(),
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -900,7 +926,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: uuidv4(),
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -912,7 +938,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 10,
+            id: uuidv4(),
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -924,7 +950,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 11,
+            id: uuidv4(),
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -936,7 +962,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 12,
+            id: uuidv4(),
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -950,7 +976,7 @@ const initialState = {
         ],
         currentItems: [
           {
-            id: 1,
+            id: uuidv4(),
             title: 'Meta Blog',
             imgSrc: metaBlog,
             descr:
@@ -962,20 +988,20 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 2,
+            id: uuidv4(),
             title: 'Todo-Social-Network',
             imgSrc: todoSocialNetwork,
             descr:
               'Cоциальная сеть с возможностью вести todo-лист своих задач, а также общаться с другими пользователями через общий чат.',
-            technologies: 'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
+            technologies:
+              'Typescript/ReactJs/Redux-toolkit/Socket.io/Express/Mongoose/MongoDB',
             filterProp: 'react',
             to: 'https://lonerr7.github.io/Todo-Social-Network-Client/',
-            github:
-              'https://github.com/Lonerr7/Todo-Social-Network-Client',
+            github: 'https://github.com/Lonerr7/Todo-Social-Network-Client',
             githubDescr: 'Смотреть код',
           },
           {
-            id: 3,
+            id: uuidv4(),
             title: 'GraphQL Project Management App',
             imgSrc: gqlProjectMgmtPic,
             descr:
@@ -988,7 +1014,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 4,
+            id: uuidv4(),
             title: 'React Pig Game',
             imgSrc: pigGamePic,
             descr:
@@ -1000,7 +1026,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 5,
+            id: uuidv4(),
             title: 'React Todo List',
             imgSrc: todoPic,
             descr:
@@ -1012,7 +1038,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 6,
+            id: uuidv4(),
             title: 'React Todo List 2',
             imgSrc: todoPic2,
             descr:
@@ -1024,7 +1050,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 7,
+            id: uuidv4(),
             title: 'React Rest Countries',
             imgSrc: countriesPic,
             descr:
@@ -1036,7 +1062,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 8,
+            id: uuidv4(),
             title: 'React Weather',
             imgSrc: weatherPic,
             descr:
@@ -1048,7 +1074,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 9,
+            id: uuidv4(),
             title: 'React Social Network',
             imgSrc: socialNetworkPic,
             descr:
@@ -1060,7 +1086,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 10,
+            id: uuidv4(),
             title: 'Computer Courses Landing Page',
             imgSrc: coursesPic,
             descr:
@@ -1072,7 +1098,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 11,
+            id: uuidv4(),
             title: 'We Fix It All Landing Page',
             imgSrc: weFixItAllPic,
             descr:
@@ -1084,7 +1110,7 @@ const initialState = {
             githubDescr: 'Смотреть код',
           },
           {
-            id: 12,
+            id: uuidv4(),
             title: 'Sass Landing Page',
             imgSrc: sassLandingPic,
             descr:
@@ -1101,19 +1127,19 @@ const initialState = {
         title: 'Контакты',
         contactInfo: [
           {
-            id: 1,
+            id: uuidv4(),
             img: <IoIosPhonePortrait />,
             title: '+375-29-154-71-02',
             descr: 'Мой персональный номер телефона',
           },
           {
-            id: 2,
+            id: uuidv4(),
             img: <FaTelegramPlane />,
             title: 'https://t.me/nice3guy',
             descr: 'Мой персональный телеграм аккаунт',
           },
           {
-            id: 3,
+            id: uuidv4(),
             img: <BsEnvelope />,
             title: 'ivan.karabankov@gmail.com',
             descr: 'Моя персональная рабочая почта',

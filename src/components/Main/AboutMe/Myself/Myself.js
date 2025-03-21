@@ -24,7 +24,7 @@ const Myself = ({ myself, currentLanguage }) => {
             ) : (
               <a
                 className={`${s.myself__link} ${s.myself__link_download}`}
-                href="https://drive.google.com/file/d/1yfc0Qs6ChhJEiGEFaRVekyewedQwsVKD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1c5d-nCtrmAb5nhPUbIrR8mRd4jM4zcFC/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
